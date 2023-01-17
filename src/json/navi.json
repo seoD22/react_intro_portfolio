@@ -1,0 +1,62 @@
+{
+  "naviDATA" : [
+    {
+      "d1": {
+        "naviText": "Portfolio",
+        "naviType": "Link",
+        "navihref": "/portfolio",
+        "naviCls": ["font141618", "li_1"]
+      }
+    },
+    {
+      "d1": {
+        "naviText": "About Me",
+        "naviType": "Link",
+        "navihref": "#about",
+        "naviCls": ["font141618", "li_2"]
+      }
+    },
+    {
+      "d1": {
+        "naviText": "Preinterview",
+        "naviType": "a",
+        "navihref": "#process",
+        "naviCls": ["font141618", "li_3"]
+      }
+    },
+    {
+      "d1": {
+        "naviText": "Contact",
+        "naviType": "a",
+        "navihref": "#contact",
+        "naviCls": ["font141618", "li_4"]
+      }
+    },
+    {
+      "d1": {
+        "naviText": "ETC",
+        "naviType": "a",
+        "navihref": "#etc",
+        "naviCls": ["font141618", "li_5"]
+      }
+    }
+  ],
+  "snsDATA":[
+    {
+      "d1": {
+        "snsImg":"./img/common/icon/sns_Git.png",
+        "snsLink": "www.naver.com",
+        "snsTarget":"_blank",
+        "snsCls":"sns_1"
+      }
+    },
+    {
+      "d1": {
+        "snsImg":"./img/common/icon/sns_Kakao.png",
+        "snsLink": "www.naver.com",
+        "snsTarget":"_blank",
+        "snsCls":"sns_2"
+      }
+    }
+  ]
+}
