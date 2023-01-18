@@ -1,6 +1,7 @@
 import 'bootstrap/dist/css/bootstrap.css'
 import Navi from './component/Navi'
 import Hamburger from './component/Hamburger'
+import Portfolio_Swiper from './component/Portfolio_Swiper'
 import Process from './component/Process'
 import './App.css';
 import './css/font.css'
@@ -11,6 +12,7 @@ function App() {
     <div className="App">
       <Navi id="gnb"></Navi>
       <Hamburger></Hamburger>
+      <Portfolio_Swiper></Portfolio_Swiper>
       <section style={{height:'100vh'}} id="dd"></section>
       <section style={{height:'100vh'}} id="portfolio"></section>
       <section style={{height:'100vh'}} id="about"></section>

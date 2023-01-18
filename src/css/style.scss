@@ -48,6 +48,16 @@ ul, li{margin-bottom: 0;}
   }
 }
 
+#portfolio{
+  .swiper-slide{
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+
 @media(min-width: 992px){
   .container{
     padding: 0 40px;

@@ -13,3 +13,10 @@
 ### - Navi.js
 ### - Process.js
 ### - Hamburger.js
+
+## 23_0118
+### 1. react module 설치
+### - swiper: v8.4.6
+
+### 2. component 생성 및 json 연결
+### - Portfolio_Swiper.js (import Port_swiper.json)
