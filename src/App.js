@@ -1,18 +1,20 @@
 import 'bootstrap/dist/css/bootstrap.css'
 import Navi from './component/Navi'
+import MainBanner from './component/MainBanner'
 import Hamburger from './component/Hamburger'
-import Portfolio_Swiper from './component/Portfolio_Swiper'
 import Process from './component/Process'
+import Portfolio from './component/Portfolio'
 import './App.css';
-import './css/font.css'
+import './css/font.scss'
 import './css/style.scss'
 
 function App() {
   return (
     <div className="App">
       <Navi id="gnb"></Navi>
+      <MainBanner></MainBanner>
       <Hamburger></Hamburger>
-      <Portfolio_Swiper></Portfolio_Swiper>
+      <Portfolio dbobjkey="react"></Portfolio>
       <section style={{height:'100vh'}} id="dd"></section>
       <section style={{height:'100vh'}} id="portfolio"></section>
       <section style={{height:'100vh'}} id="about"></section>

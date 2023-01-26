@@ -1,0 +1,62 @@
+{
+  "reactid": {
+    "title": "리액트 그럭저럭",
+    "swlist": [
+      {
+        "thumb": ["react.jpg"],
+        "ex": "3개월/광고기획웹앱/퍼소나...를 타겟으로 유튜브 홍보 기획",
+        "link": [{
+          "git": "http://www.github.com/seoD22",
+          "notion": "",
+          "plan": "구글드라이브(기획PDF)",
+          "site": "리액트노드서버 주소"
+        }]
+      }
+    ]
+  },
+  "ecid": {
+    "title": "쇼핑몰은 협업",
+    "swlist": [
+      {
+        "thumb": ["big.jpg", "plan_1.jpg","plan_2.jpg"],
+        "ex": "3개월/광고기획웹앱/퍼소나...를 타겟으로 유튜브 홍보 기획",
+        "link": [{
+          "git": "http://www.github.com/seoD22",
+          "notion": "",
+          "plan": "구글드라이브(기획PDF)",
+          "site": "리액트노드서버 주소"
+        }]
+      }
+    ]
+  },
+  "cmsid": {
+    "title": "그누보드는 프리 가능",
+    "swlist": [
+      {
+        "thumb": ["react.jpg"],
+        "ex": "3개월/광고기획웹앱/퍼소나...를 타겟으로 유튜브 홍보 기획",
+        "link": [{
+          "git": "http://www.github.com/seoD22",
+          "notion": "",
+          "plan": "구글드라이브(기획PDF)",
+          "site": "리액트노드서버 주소"
+        }]
+      }
+    ]
+  },
+  "figmaid": {
+    "title": "피그마는 전문가",
+    "swlist": [
+      {
+        "thumb": ["react.jpg"],
+        "ex": "3개월/광고기획웹앱/퍼소나...를 타겟으로 유튜브 홍보 기획",
+        "link": [{
+          "git": "http://www.github.com/seoD22",
+          "notion": "",
+          "plan": "구글드라이브(기획PDF)",
+          "site": "리액트노드서버 주소"
+        }]
+      }
+    ]
+  }
+}

@@ -1,0 +1,87 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Kavoon&family=Nunito:wght@200;300;400;500;600;700;800;900;1000&display=swap');
+
+@font-face {
+  font-family: 'YdestreetB';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2110@1.0/YdestreetB.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'RixYeoljeongdo_Regular';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2102-01@1.0/RixYeoljeongdo_Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PyeongChangPeace-Bold';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2206-02@1.0/PyeongChangPeace-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'GangwonEdu_OTFBoldA';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/GangwonEdu_OTFBoldA.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+// font class
+.YdestreetB{
+  font-family: 'YdestreetB';
+}
+.RixYeoljeongdo_Regular{
+  font-family: 'RixYeoljeongdo_Regular';
+}
+.Kavoon{
+  font-family: 'Kavoon';
+}
+.PyeongChangPeace-Bold{
+  font-family: 'PyeongChangPeace-Bold';
+}
+.GangwonEdu_OTFBoldA{
+  font-family: 'GangwonEdu_OTFBoldA';
+}
+
+
+#hd{
+  font-family: 'Nunito', sans-serif;
+  font-weight: 800;
+  font-size: 20px;
+}
+
+#main_banner{
+  font-family: 'Noto Sans KR', 'sans-serif';
+  font-weight: 300;
+  font-size: 20px;
+  .swiper-slide{
+    font-size: 70px;
+    font-weight: 600;
+  }
+}
+
+.burger{
+  .ul_list{
+    a{
+      font-family: 'Nunito', sans-serif;
+      font-weight: 900;
+      font-size: 23px
+    }
+  }
+}
+
+@media(min-width: 992px){
+  #main_banner{
+    font-family: 'Noto Sans KR', 'sans-serif';
+    font-weight: 100;
+    font-size: 35px;
+    .text_bin{
+      h2{
+        font-size: 90px;
+        font-weight: 900;
+      }
+    }
+  }
+}

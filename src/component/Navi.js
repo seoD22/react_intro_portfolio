@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, {useEffect, useState} from 'react'
 import navicss from '../css/navi.module.css'
 import { Link } from 'react-router-dom'
 import ScrollSpy from 'react-scrollspy';
@@ -6,9 +6,6 @@ import naviDB from '../json/navi.json'
 
 
 function Navi(props) {
-  const [naviText, updateText] = useState(true);
-  //json -> map으로 돌리기
-
   const naviDBfile = naviDB.naviDATA
   const naviSNSfile = naviDB.snsDATA
 
@@ -16,8 +13,7 @@ function Navi(props) {
     <div id="hd" className="fixed-top">
       <header className='container'>
         <h1 className='text-start'>
-          <Link to="/">
-            <img src="./img/common/logo/logo_main_orange.svg" alt="" />
+          <Link to="/" className='logo'>
           </Link>
         </h1>
         <ScrollSpy className='navi_ul text-start mb-5'>

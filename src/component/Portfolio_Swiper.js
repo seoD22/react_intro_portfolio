@@ -10,7 +10,7 @@ function Portfolio_Swiper(){
   const swiperDBfile = swiperDB.swiperdb
 
   return (
-    <div id='portfolio'>
+    <div id='portfoli_swiper'>
       <Swiper
         modules={[Autoplay, EffectFade]}
         spaceBetween={0}

@@ -3,15 +3,15 @@
     {
       "d1": {
         "naviText": "Portfolio",
-        "naviType": "Link",
-        "navihref": "/portfolio",
+        "naviType": "a",
+        "navihref": "#portfolio",
         "naviCls": ["font141618", "li_1"]
       }
     },
     {
       "d1": {
         "naviText": "About Me",
-        "naviType": "Link",
+        "naviType": "a",
         "navihref": "#about",
         "naviCls": ["font141618", "li_2"]
       }
