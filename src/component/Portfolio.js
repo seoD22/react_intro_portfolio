@@ -10,6 +10,7 @@ function Portfolio(props) {
   }
   return (
     <div id="portfolio">
+      <Portfolio_Swiper></Portfolio_Swiper>
       <div className="d-flex justify-content-center">
         <button onClick={btnupdate} datasrc={['PWA 리액트', 'reactid']}>PWA 리액트</button>
         <button onClick={btnupdate} datasrc={['EC 쇼핑몰', 'ecid']}>EC 쇼핑몰</button>
@@ -17,7 +18,6 @@ function Portfolio(props) {
         <button onClick={btnupdate} datasrc={['프레임워크 부트스트랩', 'figmaid']}>프레임워크 부트스트랩</button>
       </div>
       <Portfolioin dbobjkey={worknm[0]} portfolioId={worknm[1]}></Portfolioin>
-      <Portfolio_Swiper></Portfolio_Swiper>
     </div>
   );
 }

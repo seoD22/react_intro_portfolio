@@ -45,15 +45,16 @@
   font-family: 'GangwonEdu_OTFBoldA';
 }
 
+h2{font-family: 'Nunito', 'Noto Sans KR', sans-serif; font-weight: 700; font-size: 40px; color: #0166FF;}
 
 #hd{
-  font-family: 'Nunito', sans-serif;
+  font-family: 'Nunito', 'Noto Sans KR', sans-serif;
   font-weight: 800;
   font-size: 20px;
 }
 
 #main_banner{
-  font-family: 'Noto Sans KR', 'sans-serif';
+  font-family: 'Noto Sans KR', sans-serif;
   font-weight: 300;
   font-size: 20px;
   .swiper-slide{
@@ -72,16 +73,37 @@
   }
 }
 
+#portfoli_swiper{
+  h3{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 35px;
+    font-weight: 700;
+    color: #0166FF;
+  }
+}
+
+
 @media(min-width: 992px){
+  h2{
+    font-size: 50px;
+  }
+
   #main_banner{
-    font-family: 'Noto Sans KR', 'sans-serif';
+    font-family: 'Noto Sans KR', sans-serif;
     font-weight: 100;
     font-size: 35px;
     .text_bin{
       h2{
+        font-family: 'Noto Sans KR', sans-serif;
         font-size: 90px;
         font-weight: 900;
       }
+    }
+  }
+
+  #portfoli_swiper{
+    h3{
+      font-size: 35px;
     }
   }
 }

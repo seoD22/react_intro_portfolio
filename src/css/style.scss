@@ -271,6 +271,52 @@ ul, li{margin-bottom: 0;}
   }
 }
 
+#portfoli_swiper{
+  margin-top: 50px;
+  h2{
+    margin-bottom: 30px;
+  }
+  img{
+    position: absolute;
+    top: 0;
+    left: 25%;
+    width: 230px;
+  }
+  .por_circle{
+    width: 400px;
+    height: 400px;
+    background-color: #D9D9D9 !important;
+    border-radius: 50%;
+  }
+  .swiper-button-prev,
+  .swiper-button-next{
+    background-color: black;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+  }
+  .swiper-button-prev::after,
+  .swiper-button-next::after{
+    content: "";
+    width: 10px;
+    height: 10px;
+    border-top: white 1px solid;
+    border-right: white 1px solid;
+  }
+  .swiper-button-prev::after{
+    transform: rotate(-135deg);
+    position: relative;
+    left: 2px;
+  }
+  .swiper-button-next::after{
+    transform: rotate(45deg);
+    position: relative;
+    right: 2px;
+  }
+  .swiper-pagination{
+    display: none;
+  }
+}
 
 @media(min-width: 992px){
   .container{
@@ -315,5 +361,63 @@ ul, li{margin-bottom: 0;}
   
   .burger{
     display: none;
+  }
+
+  #portfoli_swiper{
+    .por_circle{
+      width: 500px;
+      height: 500px;
+      img{
+        width: 258px;
+      }
+    }
+    .swiper-slide{
+      opacity: 1;
+      transform: scale(50%) translate(-20%, 40%);
+      transition: .7s;
+      &.swiper-slide-active{
+        transform: scale(100%);
+        a{
+          position: absolute;
+          left: -297px;
+          p{
+            text-align: start;
+          }
+        }
+      }
+    }
+    .swiper-slide.swiper-slide-prev{
+      opacity: 0;
+    }
+    .swiper-button-next{
+      right: 520px;
+    }
+    .swiper-button-prev{
+      left: 520px;
+    }
+    .swiper-pagination{
+      display: flex;
+      flex-direction: column;
+      align-items: end;
+      z-index: 1;
+      top: -27px;
+      .swiper-pagination-bullet{
+        margin: 50px 100px;
+        width: 10px;
+        height: 10px;
+        &.swiper-pagination-bullet-active::after{
+          content: "";
+          width: 20px;
+          height: 20px;
+          display: block;
+          background-color: transparent;
+          border: #0166FF 1px solid;
+          border-radius: 50%;
+          top: -50%;
+          left: -50%;
+          position: relative;
+        }
+      }
+    }
   }
 }

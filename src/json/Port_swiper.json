@@ -2,22 +2,32 @@
   "swiperdb": [
     {
       "title": ["포폴_", "포폴설명_"],
-      "cls": ["bg1", "banner1", "bg-white"],
+      "cls": ["bg1", "banner1", "bg-white", "por_circle"],
+      "src":"./img/portfolio/PF_1.jpg",
       "href": ""
     },
     {
       "title": ["포폴_", "포폴설명_"],
-      "cls": ["bg2", "banner2", "bg-white"],
+      "cls": ["bg2", "banner2", "bg-white", "por_circle"],
+      "src":"./img/portfolio/PF_1.jpg",
       "href": ""
     },
     {
       "title": ["포폴_", "포폴설명_"],
-      "cls": ["bg3", "banner3", "bg-white"],
+      "cls": ["bg3", "banner3", "bg-white", "por_circle"],
+      "src":"./img/portfolio/PF_1.jpg",
       "href": ""
     },
     {
       "title": ["포폴_", "포폴설명_"],
-      "cls": ["bg4", "banner4", "bg-white"],
+      "cls": ["bg4", "banner4", "bg-white", "por_circle"],
+      "src":"./img/portfolio/PF_1.jpg",
+      "href": ""
+    },
+    {
+      "title": ["포폴_", "포폴설명_"],
+      "cls": ["bg5", "banner5", "bg-white", "por_circle"],
+      "src":"./img/portfolio/PF_1.jpg",
       "href": ""
     }
   ]
