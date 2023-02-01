@@ -110,7 +110,7 @@ h2{font-family: 'Nunito', 'Noto Sans KR', sans-serif; font-weight: 700; font-siz
       color: #8A8989;
     }
   }
-  .stack{
+  .stack_1{
     p{
       font-family: 'Nunito', sans-serif;
       font-size: 20px;
@@ -142,6 +142,11 @@ h2{font-family: 'Nunito', 'Noto Sans KR', sans-serif; font-weight: 700; font-siz
   #portfoli_swiper{
     h3{
       font-size: 35px;
+    }
+    .stack_text{
+      p{
+        font-size: 10px;
+      }
     }
   }
 }

@@ -7,15 +7,15 @@
           "stackPer": "50%"
         },
         {
-          "stackTitle": "css",
+          "stackTitle": "CSS",
           "stackPer": "30%"
         },
         {
-          "stackTitle": "scss",
+          "stackTitle": "SCSS",
           "stackPer": "10%"
         },
         {
-          "stackTitle": "scss",
+          "stackTitle": "PHP",
           "stackPer": "10%"
         }
       ]
@@ -27,36 +27,16 @@
           "stackPer": "30%"
         },
         {
-          "stackTitle": "css",
+          "stackTitle": "CSS",
           "stackPer": "30%"
         },
         {
-          "stackTitle": "scss",
+          "stackTitle": "SCSS",
           "stackPer": "20%"
         },
         {
-          "stackTitle": "scss",
+          "stackTitle": "JS",
           "stackPer": "20%"
-        }
-      ]
-    },
-    {
-      "st_1": [
-        {
-          "stackTitle": "HTML",
-          "stackPer": "50%"
-        },
-        {
-          "stackTitle": "css",
-          "stackPer": "30%"
-        },
-        {
-          "stackTitle": "scss",
-          "stackPer": "10%"
-        },
-        {
-          "stackTitle": "scss",
-          "stackPer": "10%"
         }
       ]
     },
@@ -67,15 +47,15 @@
           "stackPer": "50%"
         },
         {
-          "stackTitle": "css",
-          "stackPer": "20%"
+          "stackTitle": "CSS",
+          "stackPer": "30%"
         },
         {
-          "stackTitle": "scss",
-          "stackPer": "20%"
+          "stackTitle": "SCSS",
+          "stackPer": "10%"
         },
         {
-          "stackTitle": "scss",
+          "stackTitle": "PHP",
           "stackPer": "10%"
         }
       ]
@@ -87,15 +67,35 @@
           "stackPer": "50%"
         },
         {
-          "stackTitle": "css",
+          "stackTitle": "CSS",
           "stackPer": "20%"
         },
         {
-          "stackTitle": "scss",
+          "stackTitle": "SCSS",
           "stackPer": "20%"
         },
         {
-          "stackTitle": "scss",
+          "stackTitle": "JS",
+          "stackPer": "10%"
+        }
+      ]
+    },
+    {
+      "st_1": [
+        {
+          "stackTitle": "HTML",
+          "stackPer": "50%"
+        },
+        {
+          "stackTitle": "CSS",
+          "stackPer": "20%"
+        },
+        {
+          "stackTitle": "SCSS",
+          "stackPer": "20%"
+        },
+        {
+          "stackTitle": "PHP",
           "stackPer": "10%"
         }
       ]

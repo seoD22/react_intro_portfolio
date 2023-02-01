@@ -45,6 +45,7 @@ function Portfolio_Swiper(){
             swiperDBfile.map((item, index)=>{
               const swiperclass = item.cls.join(" ");
               const imgsrc = item.tool_img
+              const iconsrc = item.sns_icon
 
               return <SwiperSlide><div className={swiperclass}><img src={item.src} alt="" className='po_main_img' /><div className='po_des_dep1'><span><strong>{item.title[0]+index}</strong>{item.title[1]+index}</span><p className='po_tag'>{item.tag}</p><span className='po_des_dep2'><p>{item.title[2]+index}</p></span><span><p className='po_mak'>{item.mak}</p></span><div className='tools'><p>TOOLS</p><div>
                 {
@@ -52,7 +53,13 @@ function Portfolio_Swiper(){
                     return <img src={iitem} alt="" />
                   })
                 }
-              </div></div><div className='stack'><p>STACK</p><Stackbar num={index}></Stackbar></div></div></div></SwiperSlide>
+              </div></div><div className='stack_1'><p>STACK</p><Stackbar num={index}></Stackbar></div><div className='po_sns mt-3'>
+                {
+                  iconsrc.map((it, idx)=>{
+                    return <img src={it} alt="" />
+                  })
+                }
+                </div></div></div></SwiperSlide>
             })
           }
         </Swiper>

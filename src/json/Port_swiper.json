@@ -7,6 +7,7 @@
       "cls": ["bg1", "banner1", "bg-white", "por_circle"],
       "src":"./img/portfolio/PF_1.jpg",
       "tool_img": ["./img/portfolio/icon/illu.png", "./img/portfolio/icon/ps.png", "./img/portfolio/icon/vscode.png"],
+      "sns_icon":["./img/portfolio/icon/web.png", "../img/portfolio/icon/github.png", "./img/portfolio/icon/figma.png"],
       "href": ""
     },
     {
@@ -16,6 +17,7 @@
       "cls": ["bg2", "banner2", "bg-white", "por_circle"],
       "src":"./img/portfolio/PF_2.png",
       "tool_img": ["./img/portfolio/icon/illu.png", "./img/portfolio/icon/ps.png", "./img/portfolio/icon/vscode.png"],
+      "sns_icon":["./img/portfolio/icon/web.png", "../img/portfolio/icon/github.png", "./img/portfolio/icon/figma.png"],
       "href": ""
     },
     {
@@ -25,6 +27,7 @@
       "cls": ["bg3", "banner3", "bg-white", "por_circle"],
       "src":"./img/portfolio/PF_1.jpg",
       "tool_img": ["./img/portfolio/icon/illu.png", "./img/portfolio/icon/ps.png", "./img/portfolio/icon/vscode.png"],
+      "sns_icon":["./img/portfolio/icon/web.png", "../img/portfolio/icon/github.png", "./img/portfolio/icon/figma.png"],
       "href": ""
     },
     {
@@ -34,14 +37,17 @@
       "cls": ["bg4", "banner4", "bg-white", "por_circle"],
       "src":"./img/portfolio/PF_2.png",
       "tool_img": ["./img/portfolio/icon/illu.png", "./img/portfolio/icon/ps.png", "./img/portfolio/icon/vscode.png"],
+      "sns_icon":["./img/portfolio/icon/web.png", "../img/portfolio/icon/github.png", "./img/portfolio/icon/figma.png"],
       "href": ""
     },
     {
       "title": ["포폴_", "제작기간 0일", "포폴설명_"],
       "tag": ["#1번태그", "#2번태그", "#3번태그"],
+      "mak":"단독제작",
       "cls": ["bg5", "banner5", "bg-white", "por_circle"],
       "src":"./img/portfolio/PF_1.jpg",
       "tool_img": ["./img/portfolio/icon/illu.png", "./img/portfolio/icon/ps.png", "./img/portfolio/icon/vscode.png"],
+      "sns_icon":["./img/portfolio/icon/web.png", "../img/portfolio/icon/github.png", "./img/portfolio/icon/figma.png"],
       "href": ""
     }
   ]
