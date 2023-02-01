@@ -1,0 +1,104 @@
+{
+  "stackDATA" : [
+    {
+      "st_1": [
+        {
+          "stackTitle": "HTML",
+          "stackPer": "50%"
+        },
+        {
+          "stackTitle": "css",
+          "stackPer": "30%"
+        },
+        {
+          "stackTitle": "scss",
+          "stackPer": "10%"
+        },
+        {
+          "stackTitle": "scss",
+          "stackPer": "10%"
+        }
+      ]
+    },
+    {
+      "st_1": [
+        {
+          "stackTitle": "HTML",
+          "stackPer": "30%"
+        },
+        {
+          "stackTitle": "css",
+          "stackPer": "30%"
+        },
+        {
+          "stackTitle": "scss",
+          "stackPer": "20%"
+        },
+        {
+          "stackTitle": "scss",
+          "stackPer": "20%"
+        }
+      ]
+    },
+    {
+      "st_1": [
+        {
+          "stackTitle": "HTML",
+          "stackPer": "50%"
+        },
+        {
+          "stackTitle": "css",
+          "stackPer": "30%"
+        },
+        {
+          "stackTitle": "scss",
+          "stackPer": "10%"
+        },
+        {
+          "stackTitle": "scss",
+          "stackPer": "10%"
+        }
+      ]
+    },
+    {
+      "st_1": [
+        {
+          "stackTitle": "HTML",
+          "stackPer": "50%"
+        },
+        {
+          "stackTitle": "css",
+          "stackPer": "20%"
+        },
+        {
+          "stackTitle": "scss",
+          "stackPer": "20%"
+        },
+        {
+          "stackTitle": "scss",
+          "stackPer": "10%"
+        }
+      ]
+    },
+    {
+      "st_1": [
+        {
+          "stackTitle": "HTML",
+          "stackPer": "50%"
+        },
+        {
+          "stackTitle": "css",
+          "stackPer": "20%"
+        },
+        {
+          "stackTitle": "scss",
+          "stackPer": "20%"
+        },
+        {
+          "stackTitle": "scss",
+          "stackPer": "10%"
+        }
+      ]
+    }
+  ]
+}

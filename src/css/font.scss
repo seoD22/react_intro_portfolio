@@ -28,6 +28,9 @@
   font-style: normal;
 }
 
+*{font-family: 'Noto Sans KR', sans-serif;}
+
+
 // font class
 .YdestreetB{
   font-family: 'YdestreetB';
@@ -51,6 +54,11 @@ h2{font-family: 'Nunito', 'Noto Sans KR', sans-serif; font-weight: 700; font-siz
   font-family: 'Nunito', 'Noto Sans KR', sans-serif;
   font-weight: 800;
   font-size: 20px;
+  .navi_ul{
+    a{
+      font-family: 'Nunito', sans-serif;
+    }
+  }
 }
 
 #main_banner{
@@ -74,11 +82,41 @@ h2{font-family: 'Nunito', 'Noto Sans KR', sans-serif; font-weight: 700; font-siz
 }
 
 #portfoli_swiper{
-  h3{
-    font-family: 'Noto Sans KR', sans-serif;
-    font-size: 35px;
-    font-weight: 700;
-    color: #0166FF;
+  span{
+    font-size: 15px;
+    font-weight: 300;
+    color: #8A8989;
+    strong{
+      font-family: 'Noto Sans KR', sans-serif;
+      font-size: 35px;
+      font-weight: 700;
+      color: #0166FF;
+    }
+  }
+  .po_tag{
+    font-weight: 600;
+    color: #8A8989;
+  }
+  .po_des_dep2,
+  .po_mak{
+    font-size: 17px; 
+    font-weight: 400;
+  }
+  .tools{
+    p{
+      font-family: 'Nunito', sans-serif;
+      font-size: 20px;
+      font-weight: 700;
+      color: #8A8989;
+    }
+  }
+  .stack{
+    p{
+      font-family: 'Nunito', sans-serif;
+      font-size: 20px;
+      font-weight: 700;
+      color: #8A8989;
+    }
   }
 }
 

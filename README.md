@@ -33,3 +33,20 @@
 
 #### 🖤 23_0130
 ##### 1. Portfolio_Swiper 제작 중
+<br>
+
+#### 🖤 23_0131
+##### 1. react module 설치
+##### - ~~@nivo/core: v0.80.0~~
+##### - ~~@nivo/bar: v0.80.0~~
+##### - ~~@nivo/marimekko: v0.80.0~~
+##### - ~~smart-webcomponents-react: v15.0.3~~
+##### 2. Portfolio_Swiper 제작 중
+##### - stack bar 제작 중
+<br>
+
+#### 🖤 23_0201
+##### 1. react module 설치
+##### - ~~chart.js: v4.2.0~~
+##### - ~~react-chartjs-2: v5.2.0~~
+##### - ~~chartjs-plugin-datalabels: v2.2.0~~
