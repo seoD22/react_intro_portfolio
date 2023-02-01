@@ -50,3 +50,6 @@
 ##### - ~~chart.js: v4.2.0~~
 ##### - ~~react-chartjs-2: v5.2.0~~
 ##### - ~~chartjs-plugin-datalabels: v2.2.0~~
+##### 2. Portfolio_Swiper 제작 중
+##### - stack bar 제작 완료
+##### - SNS이미지 추가 완료, 추후 링크 추가 예정
