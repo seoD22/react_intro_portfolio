@@ -24,8 +24,7 @@ function Mainbanner(props) {
               loop={true}
               spaceBetween={0}
               slidesPerView={1}
-              onSlideChange={() => console.log('slide change')}
-              onSwiper={(swiper) => console.log(swiper)}
+              // onSwiper={(swiper) => console.log(swiper)}
               direction={"vertical"}
             >
               {

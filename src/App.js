@@ -4,6 +4,7 @@ import MainBanner from './component/MainBanner'
 import Hamburger from './component/Hamburger'
 import Process from './component/Process'
 import Portfolio from './component/Portfolio'
+import About from './component/About'
 import './App.css';
 import './css/font.scss'
 import './css/style.scss'
@@ -15,9 +16,7 @@ function App() {
       <MainBanner></MainBanner>
       <Hamburger></Hamburger>
       <Portfolio dbobjkey="react"></Portfolio>
-      <section style={{height:'100vh'}} id="dd"></section>
-      <section style={{height:'100vh'}} id="portfolio"></section>
-      <section style={{height:'100vh'}} id="about"></section>
+      <About></About>
       <Process id="process" title="개발자연혁"></Process>
       <section style={{height:'100vh'}} id="contact"></section>
       <section style={{height:'100vh'}} id="etc"></section>

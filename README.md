@@ -53,3 +53,9 @@
 ##### 2. Portfolio_Swiper 제작 중
 ##### - stack bar 제작 완료
 ##### - SNS이미지 추가 완료, 추후 링크 추가 예정
+
+<br>
+
+#### 🖤 23_0202
+##### 1. Portfolio_Swiper 제작 중
+##### - 반응형 제작

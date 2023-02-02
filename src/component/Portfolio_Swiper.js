@@ -1,5 +1,5 @@
-import React from 'react'
-import { Swiper, SwiperSlide} from 'swiper/react';
+import {useState} from 'react'
+import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, Navigation, Pagination } from "swiper";
 import { Link } from 'react-router-dom';
 import swiperDB from '../json/Port_swiper.json'
@@ -10,6 +10,7 @@ import "swiper/css/pagination";
 
 function Portfolio_Swiper(){
   const swiperDBfile = swiperDB.swiperdb
+  const [po_btnToggle, po_btnupdate] = useState(false)
 
   return (
     <div id='portfoli_swiper'>
@@ -26,8 +27,8 @@ function Portfolio_Swiper(){
           slidesPerView={1}
           centeredSlides={true}
           speed={500}
-          onSlideChange={() => console.log('slide change')}
-          onSwiper={(swiper) => console.log(swiper)}
+          // onSlideChange={() => console.log('slide change')}
+          // onSwiper={(swiper) => console.log(swiper)}
           autoplay={{
             delay: 100000000,
             disableOnInteraction: false,
@@ -47,7 +48,13 @@ function Portfolio_Swiper(){
               const imgsrc = item.tool_img
               const iconsrc = item.sns_icon
 
-              return <SwiperSlide><div className={swiperclass}><img src={item.src} alt="" className='po_main_img' /><div className='po_des_dep1'><span><strong>{item.title[0]+index}</strong>{item.title[1]+index}</span><p className='po_tag'>{item.tag}</p><span className='po_des_dep2'><p>{item.title[2]+index}</p></span><span><p className='po_mak'>{item.mak}</p></span><div className='tools'><p>TOOLS</p><div>
+              return <SwiperSlide><div className={swiperclass}><img src={item.src} alt="" className='po_main_img' /><div className='po_mobile'><p className='po_mobile_title'>{item.title[0]}</p><div className='d-flex justify-content-center align-items-center'><button onClick={ () => { po_btnupdate(!po_btnToggle) } }><p>More</p><div className={ po_btnToggle ? "show po_mobile_sns" : "po_mobile_sns" }>
+              {
+                iconsrc.map((it, idx)=>{
+                  return <img src={it} alt="" />
+                })
+              }
+            </div></button><div className='circle'></div></div></div><div className='po_des_dep1'><span><strong>{item.title[0]}</strong>{item.title[1]}</span><p className='po_tag'>{item.tag}</p><span className='po_des_dep2'><p>{item.title[2]}</p></span><span><p className='po_mak'>{item.mak}</p></span><div className='tools'><p>TOOLS</p><div>
                 {
                   imgsrc.map((iitem, iindex)=>{
                     return <img src={iitem} alt="" />
