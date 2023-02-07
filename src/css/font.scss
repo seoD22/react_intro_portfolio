@@ -130,6 +130,27 @@ h2{font-family: 'Nunito', 'Noto Sans KR', sans-serif; font-weight: 700; font-siz
   }
 }
 
+#about{
+  .about_text{
+    p{
+      font-family: 'Noto Sans KR', sans-serif;
+      font-size: 16px;
+      font-weight: 200;
+      &:nth-child(1){
+        font-size: 20px;
+        font-weight: 400;
+      }
+    }
+  }
+  .skillbar{
+    > div{
+      p{
+        font-size: 12px;
+      }
+    }
+  }
+}
+
 
 @media(min-width: 992px){
   h2{
@@ -156,6 +177,18 @@ h2{font-family: 'Nunito', 'Noto Sans KR', sans-serif; font-weight: 700; font-siz
     .stack_text{
       p{
         font-size: 10px;
+      }
+    }
+  }
+
+  #about{
+    .about_text{
+      p{
+        font-size: 18px;
+        font-weight: 400;
+        &:nth-child(1){
+          font-weight: 600;
+        }
       }
     }
   }

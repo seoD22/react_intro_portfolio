@@ -419,10 +419,74 @@ li {
   }
 }
 
+#about{
+  > div{
+    img{
+      width: 400px;
+    }
+  } 
+  .about_text{
+    p{
+      margin: 3px;
+    }
+  }
+  .skill_wrapper{
+    // position: absolute;
+    // width: 80%;
+    // top: 50%;
+    // left: 50%;
+    // transform: translateX(-50%) translateY(-50%);
+    padding: 10px;
+    img{
+      width: 45px;
+    }
+  }
+  .skillbar{
+    padding: 15px;
+    position: relative;
+    display: flex;
+    width: 100%;
+    > div{
+      width: 85%;
+      margin: 0;
+      position: absolute;
+      right: 0;
+      .bar{
+        width: 100%;
+        background-color: #D9D9D9;
+        height: 5px;
+        .skill_per{
+          position: absolute;
+          z-index: 1;
+          display: inline-block;
+          width: 0;
+          height: 5px;
+          background-color: #000000;
+          left: 0;
+        }
+      }
+      p{
+        position: absolute;
+        right: 0;
+        margin: 0;
+        transform: translateY(-23px);
+      }
+    }
+  }
+}
+
+
+
 @media(min-width: 992px) {
+  h2{
+    margin-top: 100px;
+  }
   .container {
     padding: 0 40px;
     max-width: 1920px;
+  }
+  .container_left{
+    padding: 0 40px 0 210px;
   }
 
   #hd {
@@ -470,7 +534,8 @@ li {
     display: none;
   }
 
-  #portfoli_swiper {
+  
+  #portfoli_swiper{
     .por_circle {
       width: 500px;
       height: 500px;
@@ -586,7 +651,7 @@ li {
             display: block;
             position: relative;
             width: 400px;
-            left: -297px;
+            left: -384px;
 
             span {
               display: flex;
@@ -611,11 +676,11 @@ li {
     }
 
     .swiper-button-next {
-      right: 520px;
+      right: 400px;
     }
 
     .swiper-button-prev {
-      left: 520px;
+      left: 400px;
     }
 
     .swiper-pagination {
@@ -652,6 +717,30 @@ li {
     left: unset;
     bottom: unset;
     width: unset;
+  }
+
+  #about{
+    > div{
+      display: flex;
+      img{
+        object-fit: contain;
+        width: 33.333%px;
+      }
+      .about_text{
+        text-align: start;
+        width: 33.333%;
+        padding: 15px 0;
+        padding-left: 7.5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+      .skill_wrapper{
+        margin-left: auto;
+        width: 33.333%;
+        padding: 0;
+      }
+    } 
   }
 }
 

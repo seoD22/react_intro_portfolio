@@ -9,7 +9,7 @@ function Portfolio(props) {
     worknmupdate(newworknm);
   }
   return (
-    <div id="portfolio">
+    <div id="portfolio" className='container_left'>
       <Portfolio_Swiper></Portfolio_Swiper>
       {/* <div className="d-flex justify-content-center">
         <button onClick={btnupdate} datasrc={['PWA 리액트', 'reactid']}>PWA 리액트</button>

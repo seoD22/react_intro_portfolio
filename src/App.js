@@ -5,6 +5,7 @@ import Hamburger from './component/Hamburger'
 import Process from './component/Process'
 import Portfolio from './component/Portfolio'
 import About from './component/About'
+import Preinterview from './component/Preinterview'
 import './App.css';
 import './css/font.scss'
 import './css/style.scss'
@@ -17,7 +18,7 @@ function App() {
       <Hamburger></Hamburger>
       <Portfolio dbobjkey="react"></Portfolio>
       <About></About>
-      <Process id="process" title="개발자연혁"></Process>
+      <Preinterview></Preinterview>
       <section style={{height:'100vh'}} id="contact"></section>
       <section style={{height:'100vh'}} id="etc"></section>
     </div>

@@ -1,0 +1,32 @@
+{
+  "skilldb":[
+    {
+      "imgsrc": "./img/skill/html.png",
+      "percent": "90%"
+    },
+    {
+      "imgsrc": "./img/skill/js.png",
+      "percent": "60%"
+    },
+    {
+      "imgsrc": "./img/skill/boot.png",
+      "percent": "80%"
+    },
+    {
+      "imgsrc": "./img/skill/jquery.png",
+      "percent": "70%"
+    },
+    {
+      "imgsrc": "./img/skill/react.png",
+      "percent": "60%"
+    },
+    {
+      "imgsrc": "./img/skill/ps.png",
+      "percent": "90%"
+    },
+    {
+      "imgsrc": "./img/skill/ai.png",
+      "percent": "80%"
+    }
+  ]
+}
