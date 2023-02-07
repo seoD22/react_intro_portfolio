@@ -475,6 +475,20 @@ li {
   }
 }
 
+#preinterview{
+  .pre_button_pc{
+    > div{
+      height: 50px;
+      margin: 10px 0;
+      border-radius: 18px;
+      box-shadow: 2px 2px 3px grey
+    }
+    > div.click{
+      background-color: #0166FF;
+    }
+  }
+}
+
 
 
 @media(min-width: 992px) {
