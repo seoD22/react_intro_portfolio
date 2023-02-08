@@ -476,16 +476,44 @@ li {
 }
 
 #preinterview{
-  .pre_button_pc{
-    > div{
+  .pre_button_mobile{
+    .pre_button{
       height: 50px;
       margin: 10px 0;
       border-radius: 18px;
-      box-shadow: 2px 2px 3px grey
+      box-shadow: 2px 2px 3px rgba($color: grey, $alpha: .3);
+      line-height: 50px;
+      padding: 0 20px;
+      text-align: start;
+      transition: .5s;
+      + .pre_answer{
+        height: 0;
+        overflow: hidden;
+        margin: 5px 0;
+        background-color: white;
+        text-align: start;
+        padding: 0 20px;
+        line-height: 1;
+        transition: .5s;
+      }
     }
-    > div.click{
+    
+    .pre_button:hover{
+      cursor: pointer;
+      background-color: #0167ff43;
+    }
+
+    .pre_button.click{
       background-color: #0166FF;
+      color: white;
+      + .pre_answer{
+        height: 300px;
+        padding: 20px;
+      }
     }
+  }
+  .pre_pc{
+    display: none;   
   }
 }
 
@@ -756,7 +784,27 @@ li {
       }
     } 
   }
+
+  #preinterview{
+    .pre_button_mobile{
+      display: none;
+    }
+    .pre_pc{
+      display: flex;
+      .pre_btns_pc{
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        height: 50px; 
+      }
+    }
+  }
 }
+
+
+
+
+
 
 // stackbar
 .stack {
