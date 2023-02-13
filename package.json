@@ -20,6 +20,7 @@
     "swiper": "^8.4.6",
     "web-vitals": "^2.1.4"
   },
+  "homepage":"https://seod22.github.io/react_intro_portfolio/",
   "scripts": {
     "start": "set PORT=3002 && react-scripts start",
     "build": "react-scripts build",
