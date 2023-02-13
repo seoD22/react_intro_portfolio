@@ -16,6 +16,10 @@ li {
   margin-bottom: 0;
 }
 
+p{
+  margin: 0;
+}
+
 .container {
   padding: 0 10px;
 }
@@ -786,6 +790,10 @@ li {
   }
 
   #preinterview{
+    h2{
+      text-align: left;
+      margin-bottom: 45px;
+    }
     .pre_button_mobile{
       display: none;
     }
@@ -795,8 +803,27 @@ li {
         display: flex;
         flex-direction: column;
         background-color: white;
-        height: 50px; 
+        height: 450px;
+        justify-content: space-between;
       }
+    }
+    .pre_button_pc{
+      background-color: white;
+      width: 40vw;
+      border-radius: 12px;
+      box-shadow: 2px 2px 3px rgba($color: grey, $alpha: .3);
+      transition: .5s;
+      &:hover{
+        cursor: pointer;
+        background-color: #0167ff43;
+      }
+      p{
+        padding-left: 70px;
+      }
+    }
+    .pre_button_pc.click{
+      width: 50vw;
+      background-color: #0166FF;
     }
   }
 }

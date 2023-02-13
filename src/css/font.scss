@@ -191,4 +191,22 @@ h2{font-family: 'Nunito', 'Noto Sans KR', sans-serif; font-weight: 700; font-siz
       }
     }
   }
+
+  #preinterview{
+    .pre_pc{
+      .pre_button_pc{
+        line-height: 100px;
+        p{
+          font-size: 18px;
+          color: #8A8989;
+          text-align: left;
+        }
+      }
+      .pre_button_pc.click{
+        p{
+          color: white;
+        }
+      }
+    }
+  }
 }
