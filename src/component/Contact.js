@@ -1,15 +1,17 @@
 import * as React from 'react';
 import Select from "react-select";
 import { useForm, Controller } from "react-hook-form";
-import { Checkbox, FormControlLabel } from "@material-ui/core";
+import { TextField, Checkbox, FormControlLabel, RadioGroup, Radio } from "@material-ui/core";
 
 function Contact(props) {
 
   const styleValue = ['html_css', 'jQuery', 'ECMA6', 'react', 'node', 'php'];
+  const radioValue = ['파트타임', '하루종일', '딱 8시간'];
 
   const { register, handleSubmit, control, watch, formState: { errors } } = useForm({
     defaultValues: {
-      firstName: '',
+      // input의 name이 들어감
+      firstName: '', 
       select: {}
     }
   });
@@ -42,7 +44,7 @@ function Contact(props) {
                 <span>이메일</span><input {...register("email", {
                   required: true,
                   pattern: {
-                    value: /\S+@\S+\.\S+/,
+                    value: /\S+@\S+\.\S+/, //정규식 표현
                     message: "이메일 형식에 맞지 않습니다.",
                   },
                 })} placeholder="test@email.com" />
@@ -91,6 +93,21 @@ function Contact(props) {
                     )
                   })
                 }
+              </li>
+              <li>
+                <RadioGroup
+                  defaultValue={radioValue[0]}
+                  name="worktime"
+                  className='flex-md-row '
+                >
+                  {
+                    radioValue.map((item, idx) => {
+                      return (
+                        <FormControlLabel value={item} control={<Radio />} label={item} />
+                      )
+                    })
+                  }
+                </RadioGroup>
               </li>
             </ul>
             <input type="submit" />
