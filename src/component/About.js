@@ -14,7 +14,7 @@ function About(props) {
     <div id='about' className='container_left'>
       <h2>About me</h2>
       <div>
-      <img src="./img/ysh.png" alt="" />
+      <img src="/img/ysh.png" alt="" />
       <div className='about_text'>
         <p>
           윤서희(94. 10. 13)
