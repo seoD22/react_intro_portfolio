@@ -11,9 +11,9 @@ function Stackbar(props) {
 
   return (
     <div className='stack'>
-      <div class="graphic">
-        <div class="row mb-1">
-          <div class="chart">
+      <div className="graphic">
+        <div className="row mb-1">
+          <div className="chart">
             {
               stackDBfile.stackDATA[props.num].st_1.map((item, index) => {
                 return <span key={'stack'+index} className={`${item.stackTitle} block`} title={item.stackTitle}><span key={'stack'+index}className='value'>{item.stackPer}</span></span>
