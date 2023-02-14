@@ -51,7 +51,7 @@ function About(props) {
         {
           skillDBfile.map((it, idx)=>{
             return (
-              <li className='skillbar d-flex align-items-center'><img src={it.imgsrc} alt="" /><div><p className='skill_value'>{it.percent}</p><div className='bar rounded-pill'><div className='skill_per rounded-pill'></div></div></div></li>
+              <li key={'skill'+idx} className='skillbar d-flex align-items-center'><img src={it.imgsrc} alt="" /><div><p className='skill_value'>{it.percent}</p><div className='bar rounded-pill'><div className='skill_per rounded-pill'></div></div></div></li>
             )
           })
         }

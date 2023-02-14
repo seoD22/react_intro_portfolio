@@ -4,7 +4,7 @@ import { Autoplay } from "swiper";
 import main_swiperDB from '../json/main_swiperDB.json'
 import 'swiper/css';
 
-function Mainbanner(props) {
+function Mainbanner() {
   const main_swiperDBfile = main_swiperDB.point
 
   return (
@@ -29,7 +29,7 @@ function Mainbanner(props) {
             >
               {
                 main_swiperDBfile.map((item, index) => {
-                  return <SwiperSlide className={item.cls}>{item.title}</SwiperSlide>
+                  return <SwiperSlide key={'slide'+index} className={item.cls}>{item.title}</SwiperSlide>
                 })
               }
             </Swiper>

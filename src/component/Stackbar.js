@@ -16,7 +16,7 @@ function Stackbar(props) {
           <div class="chart">
             {
               stackDBfile.stackDATA[props.num].st_1.map((item, index) => {
-                return <span className={`${item.stackTitle} block`} title={item.stackTitle}><span className='value'>{item.stackPer}</span></span>
+                return <span key={'stack'+index} className={`${item.stackTitle} block`} title={item.stackTitle}><span key={'stack'+index}className='value'>{item.stackPer}</span></span>
               })
             }
           </div>
@@ -25,7 +25,7 @@ function Stackbar(props) {
       <div className='stack_text d-flex'>
         {
           stackDBfile.stackDATA[props.num].st_1.map((item, index) => {
-            return <div className='d-flex align-items-center me-1'><div className={`${item.stackTitle} stack_circle`}></div><p>{item.stackTitle}</p></div>
+            return <div key={'stack_text'+index} className='d-flex align-items-center me-1'><div key={'stack_text'+index} className={`${item.stackTitle} stack_circle`}></div><p>{item.stackTitle}</p></div>
           })
         }
       </div>
