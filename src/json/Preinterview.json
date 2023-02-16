@@ -1,0 +1,20 @@
+{
+  "preinterview":[
+    {
+      "btnNm": "버튼 클릭_",
+      "value": "A"
+    },
+    {
+      "btnNm": "버튼 클릭_",
+      "value": "B"
+    },
+    {
+      "btnNm": "버튼 클릭_",
+      "value": "C"
+    },
+    {
+      "btnNm": "버튼 클릭_",
+      "value": "D"
+    }
+  ]
+}

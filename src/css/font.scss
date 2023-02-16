@@ -196,14 +196,15 @@ h2{font-family: 'Nunito', 'Noto Sans KR', sans-serif; font-weight: 700; font-siz
     .pre_pc{
       .pre_button_pc{
         line-height: 120px;
-        p{
+        button{
+          background-color: transparent;
           font-size: 18px;
           color: #8A8989;
           text-align: left;
         }
       }
       .pre_button_pc.click{
-        p{
+        button{
           color: white;
         }
       }

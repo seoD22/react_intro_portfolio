@@ -5,6 +5,7 @@ import Hamburger from './component/Hamburger'
 import Process from './component/Process'
 import Portfolio from './component/Portfolio'
 import About from './component/About'
+import Pre from './component/Pre'
 import Preinterview from './component/Preinterview'
 import Contact from './component/Contact'
 import './App.css';
@@ -19,8 +20,9 @@ function App() {
       <Hamburger></Hamburger>
       <Portfolio dbobjkey="react"></Portfolio>
       <About></About>
-      <Preinterview></Preinterview>
-      <Contact></Contact>
+      <Pre></Pre>
+      {/* <Preinterview></Preinterview>
+      <Contact></Contact> */}
       <section style={{height:'100vh'}} id="contact"></section>
       <section style={{height:'100vh'}} id="etc"></section>
     </div>
