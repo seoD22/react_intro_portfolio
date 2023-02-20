@@ -8,6 +8,7 @@ import About from './component/About'
 import Pre from './component/Pre'
 import Preinterview from './component/Preinterview'
 import Contact from './component/Contact'
+// import Dddddd from './component/dddddd'
 import './App.css';
 import './css/font.scss'
 import './css/style.scss'
@@ -21,6 +22,7 @@ function App() {
       <Portfolio dbobjkey="react"></Portfolio>
       <About></About>
       <Pre></Pre>
+      {/* <Dddddd></Dddddd> */}
       {/* <Preinterview></Preinterview>
       <Contact></Contact> */}
       <section style={{height:'100vh'}} id="contact"></section>

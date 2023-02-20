@@ -790,6 +790,7 @@ p{
   }
 
   #preinterview{
+    position: relative;
     height: 100vh;
     h2{
       text-align: left;
@@ -800,7 +801,7 @@ p{
     .pre_pc{
       display: inline;
       float: left;
-      width: 30vw;
+      width: 55vw;
       .pre_btns_pc{
         display: flex;
         flex-direction: column;
@@ -816,6 +817,7 @@ p{
       box-shadow: 2px 2px 3px rgba($color: grey, $alpha: .3);
       transition: .5s;
       position: relative;
+      z-index: 10;
       &:hover{
         cursor: pointer;
         background-color: #0167ff43;
@@ -826,18 +828,26 @@ p{
         padding-left: 70px;
       }
     }
-    .pre_button_pc.click{
-      width: 50vw;
-      background-color: #0166FF;
-      z-index: 10;
-    }
     .pre_answer_pc{
       float: right;
       transform: translate(0, 108px);
       width: 40vw;
+      background-color: white;
       border: #FCA311 solid 2px;
       border-radius: 20px;
       height: 650px;
+      position: absolute;
+      z-index: 0;
+      right: 40px;
+      top: 0;
+      padding: 70px;
+    }
+    .pre_button_pc.click{
+      width: 50vw;
+      background-color: #0166FF;
+      & + .pre_answer_pc{
+        z-index: 5;
+      }
     }
   }
 }
