@@ -64,7 +64,7 @@ const Pre = (props) => {
                         </div>
                         <div key={'answer'+idx} className='pre_answer_pc'>
                           <p>
-                            {it.content}
+                            {it.des_1}<br></br><br></br>{it.des_2}<br></br><br></br>{it.des_3}
                           </p>
                         </div>
                       </div>

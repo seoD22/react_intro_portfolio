@@ -841,9 +841,12 @@ p{
       right: 40px;
       top: 0;
       padding: 70px;
+      p{
+        text-align: left;
+      }
     }
     .pre_button_pc.click{
-      width: 50vw;
+      width: 47vw;
       background-color: #0166FF;
       & + .pre_answer_pc{
         z-index: 5;
@@ -1147,6 +1150,11 @@ body.show #popagree{
 #contact{
   .location{
     height: 46px;
+    > .formindent{
+      > label{
+        transform: translate(-39px, 0);
+      }
+    }
     .js-selectDiv{
       top: -34%
     }
@@ -1196,8 +1204,8 @@ body.show #popagree{
     p.formindent::before{
       content: "";
       position: absolute;
-      left: 0;
-      top: 0;
+      left: 3px;
+      top: 18px;
       width: 100%;
       height: 80px;
       margin-left: 16px;
@@ -1206,6 +1214,7 @@ body.show #popagree{
     p.formindent > label{
       position: relative;
       z-index: 1;
+      transform: translate(-478px, 0);
     }
     input[type="text"]{
       width: 90px;

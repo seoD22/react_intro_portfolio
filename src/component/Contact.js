@@ -1,7 +1,8 @@
-import {useEffect} from 'react';
+import { useEffect, useState } from 'react';
 import Select from "react-select";
 import { useForm, Controller } from "react-hook-form";
 import { TextField, Checkbox, FormControlLabel, RadioGroup, Radio } from "@material-ui/core";
+import axios from 'axios'
 
 function Contact(props) {
   // const areaSelectEl = document.querySelectorAll('form .js-selectDiv')[0]
@@ -45,18 +46,39 @@ function Contact(props) {
   //   }    
   // })
 
+  // axios post
+  const handleSubmit = e => {
+    // Prevent the default submit and page reload
+    e.preventDefault()
+
+    // Handle validations
+    axios
+      .post("http://seod.cafe24app.com", { companyNm, Nm, email, comDate, comTime })
+      .then(response => {
+        console.log(response)
+        // Handle response
+      })
+  }
+
+  const [companyNm, setcompanyNm] = useState()
+  const [Nm, setNm] = useState()
+  const [email, setemail] = useState()
+  const [comDate, setcomDate] = useState()
+  const [comTime, setcomTime] = useState()
+
   return (
     <div id='contact_section' className='container_left'>
       <h2>Contact</h2>
       <div className='form container p-0'>
-        <form action="데이터를 저장할 서버페이지경로" method="post" name="contact" id="contact">
+        <form action="데이터를 저장할 서버페이지경로" method="post" name="contact" id="contact" onSubmit={handleSubmit}>
           <input type="hidden" name='area' />
           <ul className='row p-0'>
             <li className="col-md-10 py-3 pr-0">
               <div className="line">
                 <p className="formindent m-0 translate_1">
                   <label className="fw-5 bg-white px-2 m-0">회사명</label>
-                  <input type="text" name='companyNm' className='d-block pl-2 w-100' placeholder="회사명을 입력해주세요."/>
+                  <input type="text" name='companyNm' className='d-block pl-2 w-100' placeholder="회사명을 입력해주세요."
+                  onChange={e => setcompanyNm(e.target.value)}/>
                 </p>
               </div>
             </li>
@@ -111,7 +133,7 @@ function Contact(props) {
               <div className="line">
                 <p className="formindent m-0 translate_1">
                   <label className="fw-5 bg-white px-2 m-0">담당자명</label>
-                  <input type="text" name="companyNm" className="d-block pl-2 w-100" />
+                  <input type="text" name="companyNm" className="d-block pl-2 w-100" onChange={e => setNm(e.target.value)}/>
                 </p>
               </div>
             </li>
@@ -119,7 +141,7 @@ function Contact(props) {
               <div className="line">
                 <p className="formindent m-0 translate_1">
                   <label className="fw-5 bg-white px-2 m-0">연락처</label>
-                  <input type="text" name="companyNm" className="d-block pl-2 w-100" placeholder="담당자님께 연락할 수 있는 이메일 혹은 카톡아이디를 남겨주세요." />
+                  <input type="text" name="companyNm" className="d-block pl-2 w-100" placeholder="담당자님께 연락할 수 있는 이메일 혹은 카톡아이디를 남겨주세요." onChange={e => setemail(e.target.value)}/>
                 </p>
               </div>
             </li>
@@ -127,7 +149,7 @@ function Contact(props) {
               <div className="line meeting">
                 <p className="formindent m-0 translate_1">
                   <label className="fw-5 bg-white px-2 m-0">면접 날짜</label>
-                  <input type="date" name="comDate" className="d-block pl-1 w-100" />
+                  <input type="date" name="comDate" className="d-block pl-1 w-100" onChange={e => setcomDate(e.target.value)} />
                 </p>
               </div>
             </li>
@@ -135,7 +157,7 @@ function Contact(props) {
               <div className="line meeting">
                 <p className="formindent m-0 translate_1">
                   <label className="fw-5 bg-white px-2 m-0">면접 시간</label>
-                  <input type="time" name="comTime" className="d-block pl-1 w-100" />
+                  <input type="time" name="comTime" className="d-block pl-1 w-100" onChange={e => setcomTime(e.target.value)}  />
                 </p>
               </div>
             </li>

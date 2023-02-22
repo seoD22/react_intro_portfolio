@@ -1,46 +1,82 @@
-import { useEffect } from 'react';
+////import interviewDBlink from '../json/preinterview.json';
+import { useState, useEffect } from 'react';
+import axios from 'axios';
 
-function Pre_PC(props) {
-  var btn_pc = document.querySelectorAll('.pre_button_pc')
+const Pre_pc = (props) => {
+  const prebtn_pc = document.getElementsByClassName('pre_button_pc')
+  // const [faqlist, setfaqlist] = useState(null); // 비동기통신 useState의 null인 이유
+  const [axiosVar, updateVar] = useState(null)
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState(null);
+    
+   //// const interviewjson = interviewDBlink[props.objnm]; 
 
-  useEffect(()=>{
-    for(var i = 0; i < btn_pc.length; i++){
-      btn_pc[i].onclick = function(){
-        var el = btn_pc[0]
-        while(el){
-          if(el.tagName === "DIV"){
-            // 클래스 삭제
-            el.classList.remove('click')
-          }
-          el = el.nextSibling;
-        } 
-        this.classList.add('click')
-      } 
+    const fetchFaq = async () => {
+      try {
+         // 요청이 시작 할 때에는 error 와 users 를 초기화하고
+      setError(null);
+      updateVar(null);
+      // loading 상태를 true 로 바꿉니다.
+      setLoading(true);
+      const response = await axios.get(
+        '//seod.cafe24app.com/notice?type=list'
+      );
+      console.log(response)
+      updateVar( response.data );      
+      } catch (e) {
+        setError(e);
+      }
+      setLoading(false); //응답받고 랜더링
     }
-  }, [])
 
-  return (
-    <div>
-      <div className='pre_answer_pc'>
+    useEffect(() => {
+      fetchFaq(); //마운팅끝나고 바로 한번만 요청실행
+    }, []);
+    
+  
+    return(
+      <div id='preinterview' className='container_left'>
+        {   loading && <div>로딩중..</div> }
+        { error &&  <div>에러가 발생했습니다</div>}
+        {
+          loading === false && <div>
+            <h2>Preinterview</h2>
+            <div className='pre_pc'>
+              <div className='pre_btns_pc'>
+                {
+                  axiosVar && axiosVar.map((it, idx)=>{
+                    return(
+                      <div key={'prebtns'+idx} >
+                        <div className='pre_button_pc' onClick={(e)=>{
+                          axiosVar.forEach((v, i)=>{
+                            if( i === idx){
+                              prebtn_pc.item(i).classList = 'pre_button_pc click'
+                            }else{
+                              prebtn_pc.item(i).classList = 'pre_button_pc'
+                            }
+                          })
+                            // updateVar(it.func)
+                          }
+                        }>
+                          <button name={'btn'+it.func}>
+                            {it.subject}
+                          </button>
+                        </div>
+                        <div key={'answer'+idx} className='pre_answer_pc'>
+                          <p>
+                            {it.des_1}<br></br><br></br>{it.des_2}<br></br><br></br>{it.des_3}
+                          </p>
+                        </div>
+                      </div>
+                    )
+                  })
+                }
+              </div>
+            </div>
+          </div>
+        }
       </div>
-      <div className='pre_pc'>
-        <div className='pre_btns_pc'>
-          <div className='pre_button_pc click'>
-            <p>첫번째 질문</p>
-          </div>
-          <div className='pre_button_pc'>
-            <p>두번째 질문</p>
-          </div>
-          <div className='pre_button_pc'>
-            <p>세번째 질문</p>
-          </div>
-          <div className='pre_button_pc'>
-            <p>네번째 질문</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  );
-}
+    )
+  }
 
-export default Pre_PC;
+  export default Pre_pc;
