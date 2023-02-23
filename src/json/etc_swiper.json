@@ -1,0 +1,36 @@
+{
+  "swiperDB":[
+    {
+      "title": "무궁화콘텐츠공모전",
+      "imgsrc": "./img/etc/etc_1.jpg"
+    },
+    {
+      "title": "홈페이지리뉴얼_TOMNTOMS",
+      "imgsrc": "./img/etc/etc_2.jpg"
+    },
+    {
+      "title": "아디다스 광고디자인",
+      "imgsrc": "./img/etc/etc_3.jpg"
+    },
+    {
+      "title": "출판콘텐츠제작_꽃송이가",
+      "imgsrc": "./img/etc/etc_4.jpg"
+    },
+    {
+      "title": "잡지디자인_Meokstagram",
+      "imgsrc": "./img/etc/etc_5.jpg"
+    },
+    {
+      "title": "사보표지디자인_KINS",
+      "imgsrc": "./img/etc/etc_6.png"
+    },
+    {
+      "title": "포스터디자인_낭비 사회를 넘어서",
+      "imgsrc": "./img/etc/etc_7.png"
+    },
+    {
+      "title": "CI_아모레퍼시픽",
+      "imgsrc": "./img/etc/etc_8.jpg"
+    }
+  ]
+}

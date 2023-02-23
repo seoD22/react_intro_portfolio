@@ -349,6 +349,7 @@ p{
 }
 
 #portfolio {
+  margin-top: 100px;
   .swiper-slide {
     height: 600px;
     display: flex;
@@ -424,6 +425,7 @@ p{
 }
 
 #about{
+  margin-top: 50px;
   > div{
     img{
       width: 400px;
@@ -480,6 +482,7 @@ p{
 }
 
 #preinterview{
+  margin-top: 100px;
   .pre_button_mobile{
     .pre_button{
       height: 50px;
@@ -519,6 +522,7 @@ p{
 }
 
 #contact_section{
+  margin-top: 100px;
   .formindent{
     > input{
       padding-left: 11px;
@@ -577,6 +581,39 @@ p{
   }
 }
 
+#etc{
+  height: 100vh;
+  margin-top: 100px;
+  .swiper{
+    margin-top: 50px;
+    .swiper-slide{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .swiper-slide:nth-child(even){
+      display: flex;
+      flex-direction: column;
+      p{
+        display: flex;
+        order: 1;
+        margin: 10px auto;
+      }
+    }
+    p{
+      margin: 10px 0;
+    }
+  }
+  .etc_img{
+    height: 210px;
+    width: 350px;
+    overflow: hidden;
+    border-radius: 25px;
+    img{
+      width: 100%;
+    }
+  }
+}
 
 
 @media(min-width: 992px) {
@@ -952,8 +989,12 @@ p{
       }
     }
   }
+  #etc{
+    .swiper{
+      margin-top: 70px;
+    }
+  }
 }
-
 
 
 

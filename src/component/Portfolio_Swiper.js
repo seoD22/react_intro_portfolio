@@ -48,6 +48,7 @@ function Portfolio_Swiper() {
         <Swiper
           modules={[Autoplay, Navigation, Pagination]}
           loop={true}
+          loopAdditionalSlides={1}
           navigation={true}
           pagination={
             { clickable: true }
