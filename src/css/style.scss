@@ -518,6 +518,65 @@ p{
   }
 }
 
+#contact_section{
+  .formindent{
+    > input{
+      padding-left: 11px;
+    }
+    > label{
+      position: relative;
+      transform: translateX(-301%);
+    }
+    .managerNm{
+      transform: translateX(-231%);
+    }
+  }
+  .translate_2{
+    > label{
+      transform: translateX(-219%);
+    }
+  }
+  .meeting{
+    .formindent{
+      > label{
+        transform: translateX(-63%);
+      }
+    }
+  }
+  .check_box{
+    top: 23px;
+    .font-sm{
+      text-align: left;
+      left: 27px;
+    }
+  }
+
+  .companyNm{
+    .formindent::before{
+      content: "";
+      position: absolute;
+      left: 3px;
+      top: -20px;
+      width: 100%;
+      height: 80px;
+      margin-left: 16px;
+      background-color: white;
+    }
+  }
+  .font-sm{
+    position: relative;
+    transform: translate(-15px, 1px);
+  }
+  .js-selectDiv{
+    span{
+      padding-left: 4px;
+    }
+  }
+  .etc_text{
+    height: 206px;
+  }
+}
+
 
 
 @media(min-width: 992px) {
@@ -853,6 +912,46 @@ p{
       }
     }
   }
+
+  #contact_section{
+    .translate_1{
+      display: flex;
+      flex-direction: column;
+      align-items: baseline;
+      left: 2px;
+    }
+    .formindent{
+      > label{
+        transform: none;
+        left: 2px;
+      }
+      .managerNm{
+        transform: none;
+      }
+    } 
+    .translate_2{
+      > label{
+        transform: none;
+        left: -35px;
+      }
+    }
+    .check_box{
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      > label{
+        left: 4px;
+      }
+    }
+    .meeting .formindent > label{
+      transform: none;
+    }
+    .comment{
+      span{
+        float: left;
+      }
+    }
+  }
 }
 
 
@@ -1150,11 +1249,6 @@ body.show #popagree{
 #contact{
   .location{
     height: 46px;
-    > .formindent{
-      > label{
-        transform: translate(-39px, 0);
-      }
-    }
     .js-selectDiv{
       top: -34%
     }
@@ -1192,29 +1286,15 @@ body.show #popagree{
         z-index: 1;
       }
     }
-    label:nth-child(1){
-      padding-left: 24px;
-    }
     i{
       color: #FCA311;
     }
     input:checked + i::before{
       color: #0166FF;
     }
-    p.formindent::before{
-      content: "";
-      position: absolute;
-      left: 3px;
-      top: 18px;
-      width: 100%;
-      height: 80px;
-      margin-left: 16px;
-      background-color: white;
-    }
     p.formindent > label{
       position: relative;
       z-index: 1;
-      transform: translate(-478px, 0);
     }
     input[type="text"]{
       width: 90px;

@@ -30,8 +30,7 @@ function Preinterview(props) {
 
 
   return (
-    <div id='preinterview' className='container_left'>
-      <h2>Preinterview</h2>
+    <div>
       {
         resize <= 992
         ? <Pre_mobile></Pre_mobile> : <Pre_PC></Pre_PC>
