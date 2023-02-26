@@ -7,7 +7,6 @@ import About from './component/About'
 import Preinterview from './component/Preinterview'
 import Contact from './component/Contact'
 import Etc from './component/Etc'
-import Footer from './component/Footer'
 import './App.css';
 import './css/font.scss'
 import './css/style.scss'
@@ -23,7 +22,6 @@ function App() {
       <Preinterview></Preinterview>
       <Contact></Contact>
       <Etc></Etc>
-      <Footer></Footer>
     </div>
   );
 }
