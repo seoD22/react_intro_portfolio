@@ -121,10 +121,17 @@ p{
 
 #main_banner {
   height: 100vh;
-  background-color: #808080;
   background-repeat: no-repeat;
   background-size: cover;
-
+  background-image: url(../../public/img/common/main.jpg);
+  background-position: center left;
+  position: relative;
+  &::before{
+    content: "";
+    position: absolute;
+    left: 0; right: 0; top: 0; bottom: 0;
+    background-color: rgba($color: #302f2f, $alpha: .5);
+  }
   .main_text {
     padding-top: 250px;
     color: white;
@@ -485,6 +492,7 @@ p{
   margin-top: 100px;
   .pre_button_mobile{
     .pre_button{
+      color: #8a8989;
       height: 50px;
       margin: 10px 0;
       border-radius: 18px;
@@ -502,6 +510,11 @@ p{
         padding: 0 20px;
         line-height: 1;
         transition: .5s;
+        p{
+          font-size: 14px;
+          line-height: 1.3;
+          color: #8a8989;
+        }
       }
     }
     
@@ -652,6 +665,7 @@ p{
 
       li {
         padding: 8px 0;
+        height: 3rem;
       }
     }
 
@@ -666,12 +680,16 @@ p{
   }
 
   #main_banner {
-    background-image: url('../../public/img/common/logo/logo_big.svg');
+    background-image: url('../../public/img/common/main_4.jpg');
+    background-position: 150px 27%;
+    .main_text{
+      margin-left: 19rem;
+    }
   }
 
   .burger {
     display: none;
-  }
+  } 
 
   
   #portfoli_swiper{

@@ -10,7 +10,7 @@ function Mainbanner() {
   return (
     <div id='main_banner' className='container'>
       <div>
-        <div className='main_text'>
+        <div className='main_text col-lg-5'>
           <span>
             프론트엔드 개발자
           </span>

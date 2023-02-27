@@ -20,7 +20,7 @@
       "d1": {
         "naviText": "Preinterview",
         "naviType": "a",
-        "navihref": "#process",
+        "navihref": "#preinterview",
         "naviCls": ["font141618", "li_3"]
       }
     },
