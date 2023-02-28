@@ -441,6 +441,7 @@ p{
   .about_text{
     p{
       margin: 3px;
+      margin-top: 10px;
     }
   }
   .skill_wrapper{
@@ -529,6 +530,9 @@ p{
       + .pre_answer{
         height: 300px;
         padding: 20px;
+        &:nth-child(2){
+          height: 405px;
+        }
       }
     }
   }
@@ -884,20 +888,24 @@ p{
       display: flex;
       img{
         object-fit: contain;
-        width: 33.333%px;
+        width: 33.333%;
+      }
+      .about_img{
+        transform: translateY(-44px);
       }
       .about_text{
         text-align: start;
-        width: 33.333%;
         padding: 15px 0;
-        padding-left: 7.5rem;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
+        padding-left: 3rem;
+        // display: flex;
+        // flex-direction: column;
+        // justify-content: space-between;
+        p:nth-child(1){
+          margin-top: 0;
+        }
       }
       .skill_wrapper{
         margin-left: auto;
-        width: 33.333%;
         padding: 0;
       }
     } 
@@ -1013,9 +1021,6 @@ p{
     }
   }
 }
-
-
-
 
 
 // stackbar

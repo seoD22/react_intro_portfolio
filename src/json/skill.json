@@ -1,32 +1,36 @@
 {
   "skilldb":[
     {
+      "imgsrc": "./img/skill/figma.png",
+      "percent": "80%"
+    },
+    {
+      "imgsrc": "./img/skill/ps-il.png",
+      "percent": "95%"
+    },
+    {
       "imgsrc": "./img/skill/html.png",
       "percent": "90%"
     },
     {
-      "imgsrc": "./img/skill/js.png",
-      "percent": "60%"
-    },
-    {
-      "imgsrc": "./img/skill/boot.png",
-      "percent": "80%"
-    },
-    {
-      "imgsrc": "./img/skill/jquery.png",
+      "imgsrc": "./img/skill/react.png",
       "percent": "70%"
     },
     {
-      "imgsrc": "./img/skill/react.png",
-      "percent": "60%"
-    },
-    {
-      "imgsrc": "./img/skill/ps.png",
+      "imgsrc": "./img/skill/boot.png",
       "percent": "90%"
     },
     {
-      "imgsrc": "./img/skill/ai.png",
+      "imgsrc": "./img/skill/jquery.png",
       "percent": "80%"
+    },
+    {
+      "imgsrc": "./img/skill/php.png",
+      "percent": "50%"
+    },
+    {
+      "imgsrc": "./img/skill/node.png",
+      "percent": "40%"
     }
   ]
 }

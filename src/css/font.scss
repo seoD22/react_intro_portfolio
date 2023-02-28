@@ -140,6 +140,11 @@ h2{font-family: 'Nunito', 'Noto Sans KR', sans-serif; font-weight: 700; font-siz
         font-size: 20px;
         font-weight: 400;
       }
+      &:nth-child(7),
+      &:nth-child(8),
+      &:nth-child(9){
+        font-weight: 400;
+      }
     }
   }
   .skillbar{
@@ -200,9 +205,15 @@ h2{font-family: 'Nunito', 'Noto Sans KR', sans-serif; font-weight: 700; font-siz
   #about{
     .about_text{
       p{
-        font-size: 18px;
+        font-size: 16px;
         font-weight: 400;
         &:nth-child(1){
+          font-weight: 600;
+        }
+        &:nth-child(7),
+        &:nth-child(8),
+        &:nth-child(9){
+          font-size: 17px;
           font-weight: 600;
         }
       }

@@ -1,18 +1,18 @@
 {
   "swiperdb": [
     {
-      "title": ["위잇딜라이트", "제작기간 7일", "처음만들어본 홈페이지입니다. 처음만들어본 홈페이지입니다.처음만들어본 홈페이지입니다."],
-      "tag": ["#그누보드", " #첫홈페이지", " #위잇딜라이트"],
+      "title": ["그누보드", "제작기간 7일", "그누보드를 활용하여 만든 홈페이지입니다. "],
+      "tag": ["#위잇딜라이트", " #직장인", " #도시락", " #점심고민그만"],
       "mak":"단독제작",
       "cls": ["bg1", "banner1", "bg-white", "por_circle"],
       "src":"./img/portfolio/PF_1.jpg",
-      "tool_img": ["./img/portfolio/icon/illu.png", "./img/portfolio/icon/ps.png", "./img/portfolio/icon/vscode.png"],
+      "tool_img": ["./img/portfolio/icon/boot.png", "./img/portfolio/icon/illu.png", "./img/portfolio/icon/ps.png", "./img/portfolio/icon/vscode.png"],
       "sns_icon":["./img/portfolio/icon/web.png", "../img/portfolio/icon/github.png", "./img/portfolio/icon/figma.png"],
       "href": ""
     },
     {
-      "title": ["김포밝은안과의원", "제작기간 10일", "그누보드로 제작했습니다. 재밌었습니다. PHP언어를 아주 살짝 다루었습니다"],
-      "tag": ["#그누보드", " #PHP", " #3번태그"],
+      "title": ["그누보드", "제작기간 12일", "그누보드로 제작했습니다. 재밌었습니다. PHP언어를 아주 살짝 다루었습니다"],
+      "tag": ["#김포밝은안과의원", " #PHP", " #병원페이지"],
       "mak":"단독제작",
       "cls": ["bg2", "banner2", "bg-white", "por_circle"],
       "src":"./img/portfolio/PF_2.png",
@@ -21,30 +21,10 @@
       "href": ""
     },
     {
-      "title": ["포폴_3", "제작기간 0일", "포폴설명_"],
-      "tag": ["#1번태그", "#2번태그", "#3번태그"],
-      "mak":"단독제작",
+      "title": ["카페24", "제작기간 0일", "포폴설명_"],
+      "tag": ["#메종에트", "#2번태그", "#3번태그"],
+      "mak":"제작제작제작",
       "cls": ["bg3", "banner3", "bg-white", "por_circle"],
-      "src":"./img/portfolio/PF_1.jpg",
-      "tool_img": ["./img/portfolio/icon/illu.png", "./img/portfolio/icon/ps.png", "./img/portfolio/icon/vscode.png"],
-      "sns_icon":["./img/portfolio/icon/web.png", "../img/portfolio/icon/github.png", "./img/portfolio/icon/figma.png"],
-      "href": ""
-    },
-    {
-      "title": ["포폴_4", "제작기간 0일", "포폴설명_"],
-      "tag": ["#1번태그", "#2번태그", "#3번태그"],
-      "mak":"단독제작",
-      "cls": ["bg4", "banner4", "bg-white", "por_circle"],
-      "src":"./img/portfolio/PF_2.png",
-      "tool_img": ["./img/portfolio/icon/illu.png", "./img/portfolio/icon/ps.png", "./img/portfolio/icon/vscode.png"],
-      "sns_icon":["./img/portfolio/icon/web.png", "../img/portfolio/icon/github.png", "./img/portfolio/icon/figma.png"],
-      "href": ""
-    },
-    {
-      "title": ["포폴_5", "제작기간 0일", "포폴설명_"],
-      "tag": ["#1번태그", "#2번태그", "#3번태그"],
-      "mak":"단독제작",
-      "cls": ["bg5", "banner5", "bg-white", "por_circle"],
       "src":"./img/portfolio/PF_1.jpg",
       "tool_img": ["./img/portfolio/icon/illu.png", "./img/portfolio/icon/ps.png", "./img/portfolio/icon/vscode.png"],
       "sns_icon":["./img/portfolio/icon/web.png", "../img/portfolio/icon/github.png", "./img/portfolio/icon/figma.png"],

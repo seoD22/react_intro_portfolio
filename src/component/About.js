@@ -14,15 +14,15 @@ function About(props) {
     <div id='about' className='container_left'>
       <h2>About me</h2>
       <div>
-      <img src="/img/ysh.png" alt="" />
+      <img className='about_img' src="/img/ysh.png" alt="" />
       <div className='about_text'>
         <p>
           윤서희(94. 10. 13)
         </p>
-        <br></br>
         <p>
           경기도 성남시 수정구 거주
         </p>
+        <br></br>
         <p>
           010-5480-5732
         </p>
@@ -47,7 +47,7 @@ function About(props) {
           GTQ 1급
         </p>
       </div>
-      <ul className='skill_wrapper'>
+      <ul className='skill_wrapper col-lg-5'>
         {
           skillDBfile.map((it, idx)=>{
             return (
