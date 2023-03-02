@@ -35,13 +35,13 @@ const Pre_pc = (props) => {
     
   
     return(
-      <div id='preinterview' className='container_left'>
+      <div id='preinterview' className='mt-3 mb-5 contentBox col-lg-9 mx-lg-auto'>
         {   loading && <div>로딩중..</div> }
         { error &&  <div>에러가 발생했습니다</div>}
         {
           loading === false && <div>
-            <h2>Preinterview</h2>
-            <div className='pre_pc'>
+            <h2 className='mt-5 mb-5 text-center'>Preinterview</h2>
+            <div className='pre_pc visually-hidden'>
               <div className='pre_btns_pc'>
                 {
                   axiosVar && axiosVar.map((it, idx)=>{

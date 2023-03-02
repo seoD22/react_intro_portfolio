@@ -35,7 +35,7 @@ const Pre = (props) => {
     
   
     return(
-      <div id='preinterview' className='container_left'>
+      <div id='preinterview'>
         {   loading && <div>로딩중..</div> }
         { error &&  <div>에러가 발생했습니다</div>}
         {

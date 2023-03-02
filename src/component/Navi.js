@@ -11,20 +11,20 @@ function Navi(props) {
 
   return (
     <div id="hd" className="fixed-top">
-      <header className='container'>
-        <h1 className='text-start'>
-          <Link to="/" className='logo'>
-          </Link>
+      <header className='px-3 mt-3 px-lg-5 mt-lg-5'>
+        <h1 className='text-start mb-3'>
+          <a href='#main_banner' className='logo'>
+          </a>
         </h1>
-        <ScrollSpy className='navi_ul text-start mb-5'>
+        <ScrollSpy className='navi_ul text-start mb-4' items={ ['portfolio', 'about', 'preinterview','contact','etc'] } currentClassName="active">
           {
             naviDBfile.map((item, index)=>{
               const myclass = item.d1.naviCls.join(" ");
 
               if(item.d1.naviType){
-                return <li key={'navi'+index} className={myclass}><a href={item.d1.navihref}>{item.d1.naviText}</a></li>
+                return <li key={'navi'+index} className={myclass}><a href={item.d1.navihref}><span className='en'>{item.d1.naviText}</span><span className='kr'>{item.d1.naviText_kr}</span></a></li>
               }else{
-                return <li key={'navi'+index} className={myclass}><Link href={item.d1.navihref}>{item.d1.naviText}</Link></li>
+                return <li key={'navi'+index} className={myclass}><Link href={item.d1.navihref}><span className='en'>{item.d1.naviText}</span><span className='kr'>{item.d1.naviText_kr}</span></Link></li>
               }
             })
           }
@@ -33,7 +33,7 @@ function Navi(props) {
           {
             naviSNSfile.map((item, index)=>{
               return <li key={'sns'+index} className={item.d1.snsCls}>
-                <a href={item.d1.snsLink} target={item.d1.snsTarget}><img src={item.d1.snsImg} alt="" /></a>
+                <a href={item.d1.snsLink} target={item.d1.snsTarget}><img className='img-fluid' src={item.d1.snsImg} alt="" /></a>
               </li>
             })
           }

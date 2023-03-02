@@ -8,7 +8,7 @@ function Portfolio(props) {
     worknmupdate(newworknm);
   }
   return (
-    <div id="portfolio" className='container_left'>
+    <div id="portfolio" className='py-5 '>
       <Portfolio_Swiper></Portfolio_Swiper>
     </div>
   );

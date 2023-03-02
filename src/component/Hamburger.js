@@ -7,7 +7,7 @@ function App() {
   const naviDBfile = naviDB.naviDATA
 
   return (
-    <div className="burger">
+    <div className="burger pt-3">
       <button className='burger_btn' onClick={ () => { burgerSet(!burgerToggle) } }>
         <img src={ burgerToggle ? "./img/common/icon/ham_close.png" : "./img/common/icon/ham_open.png" }alt="" />
       </button>

@@ -15,13 +15,20 @@ function App() {
   return (
     <div className="App">
       <Navi id="gnb"></Navi>
-      <MainBanner></MainBanner>
-      <Hamburger></Hamburger>
-      <Portfolio dbobjkey="react"></Portfolio>
-      <About></About>
-      <Preinterview></Preinterview>
-      <Contact></Contact>
-      <Etc></Etc>
+      <div className='container-fluid px-0 overflow-hidden ' >
+        <MainBanner></MainBanner>
+        <div className="contentBox mx-auto">
+          <Hamburger></Hamburger>
+          <Portfolio dbobjkey="react"></Portfolio>
+          <About></About>
+          <Preinterview></Preinterview>
+          <Contact></Contact>
+          
+
+        </div>
+        <Etc></Etc>
+       
+      </div>
     </div>
   );
 }

@@ -1,3 +1,7 @@
+body{
+  position: relative;
+}
+
 a {
   color: #333;
   text-decoration: none;
@@ -18,16 +22,14 @@ li {
 
 p{
   margin: 0;
-}
-
-.container {
-  padding: 0 10px;
-}
+}   
 
 .App {
   position: relative;
 }
-
+.container{
+  padding: 0;
+}
 .circle {
   width: 25px;
   height: 25px;
@@ -63,10 +65,31 @@ p{
   background-color: #962D3E !important;
 }
 
+.cursor_p{
+  cursor: pointer;
+}
+
+.painting{
+  position: absolute
+}
+
+.en{
+  font-family: 'Nunito', sans-serif;
+}
+.kr{
+  font-family: 'Noto Sans KR', sans-serif;
+  color: #0166FF;
+}
+
+.contentBox{
+  max-width: 1280px;
+
+}
+
 #hd {
   background-color: rgba($color: white, $alpha: 0);
   max-width: 210px;
-  padding-top: 10px;
+  // padding-top: 10px;
 
   .logo {
     background-image: url(../../public/img/common/logo/logo_black.svg);
@@ -79,38 +102,28 @@ p{
 
   .navi_ul {
     display: none;
-
-    li:hover {
-      font-size: 0;
-    }
-
-    .li_1:hover a::before {
-      content: "포트폴리오";
-      font-size: 20px;
-    }
-
-    .li_2:hover a::before {
-      content: "내소개";
-      font-size: 20px;
-    }
-
-    .li_3:hover a::before {
-      content: "사전인터뷰";
-      font-size: 20px;
-    }
-
-    .li_4:hover a::before {
-      content: "연락하기";
-      font-size: 20px;
-    }
-
-    .li_5:hover a::before {
-      content: "기타";
-      font-size: 20px;
-    }
-
     a {
-      white-space: nowrap;
+      span{
+        white-space: nowrap;
+        font-weight: 300;
+        text-transform: uppercase;
+        font-size: 16px;
+        line-height: 2;
+      }
+      .en{
+        display: block;
+      }
+      .kr{
+        display: none;
+      }
+    }
+    li:hover{
+      .en{
+        display: none;
+      }
+      .kr{
+        display: block;
+      }
     }
   }
 
@@ -120,42 +133,52 @@ p{
 }
 
 #main_banner {
-  height: 100vh;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-image: url(../../public/img/common/main.jpg);
-  background-position: center left;
-  position: relative;
-  &::before{
-    content: "";
-    position: absolute;
-    left: 0; right: 0; top: 0; bottom: 0;
-    background-color: rgba($color: #302f2f, $alpha: .5);
+  height: calc(100vh - 10rem);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  .banner_img{
+    opacity: 0;
+    transition: .5s;
+    background-size: auto 107%;
+    background-position: right bottom;
+    background-repeat: no-repeat;
+    &.show{
+      opacity: 1 !important;
+    }
+   
+    
   }
   .main_text {
-    padding-top: 250px;
-    color: white;
     position: relative;
 
+   
+    span{
+      z-index: 1;
+    }
     .text_bin {
-      margin: 20px 0;
-
       &::before {
         content: "[";
         font-size: 60px;
         font-weight: 600;
       }
-
       &::after {
         content: ";]";
         font-size: 60px;
         font-weight: 600;
       }
-
       .swiper {
         height: 100px;
+        margin-left: 3rem;
+        margin-right: 3rem;
       }
     }
+  }
+  .painting{
+    max-width: 50px;
+    right: 22rem;
+    top: 6rem;
   }
 }
 
@@ -171,8 +194,7 @@ p{
     background-color: transparent;
     border: 0;
     right: 0;
-    padding: 10px;
-
+    // padding: 10px;
     img {
       width: 50px;
       transition: .3s;
@@ -356,7 +378,7 @@ p{
 }
 
 #portfolio {
-  margin-top: 100px;
+  
   .swiper-slide {
     height: 600px;
     display: flex;
@@ -366,12 +388,6 @@ p{
 }
 
 #portfoli_swiper {
-  margin-top: 50px;
-
-  h2 {
-    margin-bottom: 30px;
-  }
-
   img {
     position: absolute;
     top: 0;
@@ -461,18 +477,16 @@ p{
     display: flex;
     width: 100%;
     > div{
-      width: 85%;
-      margin: 0;
-      position: absolute;
-      right: 0;
+      position: relative;
+      flex-grow: 1;
+      margin-left: 8px;
+  
       .bar{
         width: 100%;
         background-color: #D9D9D9;
         height: 5px;
         .skill_per{
           position: absolute;
-          z-index: 1;
-          display: inline-block;
           width: 0;
           height: 5px;
           background-color: #000000;
@@ -539,13 +553,30 @@ p{
 }
 
 #contact_section{
-  margin-top: 100px;
+
+  .location{
+    .bg_arrow{
+      cursor: pointer;
+    }
+    ul{
+      li{
+        cursor: pointer;
+        text-align: start;
+        padding-left: 5px;
+        &:hover{
+          color: #0166FF;
+        }
+      }
+    }
+  }
   .formindent{
     > input{
-      padding-left: 11px;
+      padding-left: 6px;
     }
     > label{
       position: relative;
+      padding-left: 5px;
+      padding-right: 5px;
       transform: translateX(-301%);
     }
     .managerNm{
@@ -565,10 +596,10 @@ p{
     }
   }
   .check_box{
-    top: 23px;
+   
     .font-sm{
       text-align: left;
-      left: 27px;
+     
     }
   }
 
@@ -580,13 +611,19 @@ p{
       top: -20px;
       width: 100%;
       height: 80px;
-      margin-left: 16px;
+    
       background-color: white;
     }
   }
   .font-sm{
     position: relative;
-    transform: translate(-15px, 1px);
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    padding-left: 5px;
+    top: -8px;
+
+   
   }
   .js-selectDiv{
     span{
@@ -638,21 +675,13 @@ p{
     margin-top: 100px;
   }
   .container {
-    padding: 0 40px;
     max-width: 1920px;
-  }
-  .container_left{
-    padding: 0 40px 0 210px;
   }
 
   #hd {
     display: block;
     height: 100vh;
-    background-color: rgba($color: white, $alpha: .9);
-
     h1 {
-      margin-bottom: 60px;
-
       .logo {
         background-image: url(../../public/img/common/logo/logo_main_orange.svg);
         font-size: 5rem;
@@ -666,11 +695,6 @@ p{
     .navi_ul {
       padding-left: 0;
       display: block;
-
-      li {
-        padding: 8px 0;
-        height: 3rem;
-      }
     }
 
     .sns {
@@ -684,10 +708,8 @@ p{
   }
 
   #main_banner {
-    background-image: url('../../public/img/common/main_4.jpg');
-    background-position: 150px 27%;
     .main_text{
-      margin-left: 19rem;
+     
     }
   }
 
@@ -913,12 +935,11 @@ p{
 
   #preinterview{
     position: relative;
-    height: 100vh;
+   
     h2{
-      text-align: left;
-      margin-bottom: 45px;
-      float: left;
-      width: 30vw;
+    
+ 
+ 
     }
     .pre_pc{
       display: inline;
@@ -981,12 +1002,12 @@ p{
       display: flex;
       flex-direction: column;
       align-items: baseline;
-      left: 2px;
+    
     }
     .formindent{
       > label{
         transform: none;
-        left: 2px;
+       
       }
       .managerNm{
         transform: none;
@@ -995,7 +1016,7 @@ p{
     .translate_2{
       > label{
         transform: none;
-        left: -35px;
+       
       }
     }
     .check_box{
@@ -1003,7 +1024,7 @@ p{
       flex-direction: column;
       align-items: start;
       > label{
-        left: 4px;
+      
       }
     }
     .meeting .formindent > label{
@@ -1015,6 +1036,7 @@ p{
       }
     }
   }
+
   #etc{
     .swiper{
       margin-top: 70px;
@@ -1263,9 +1285,9 @@ input{outline: none; border-color: transparent;}
 i{font-size: .9rem;}
 textarea{border-style: none; border-color: transparent; outline: none; font-size: 12px;}
 
-.line{border: 2px solid #FCA311; border-radius: 5px;}
+.line{border: 2px solid #FCA311; border-radius: 5px; padding-left: 1rem;}
 .blueline{border-color: #0166FF;}
-.formindent{padding-right: 1rem; padding-left: 1rem;}
+.formindent{padding-right: 1rem; }
 .js-selectDiv{transition: 0.5s; height: 20px;}
 .js-selectDiv.on{height: 150px;}
 .font-sm{font-size: 12px; line-height: 1;}
@@ -1314,7 +1336,15 @@ body.show #popagree{
   .location{
     height: 46px;
     .js-selectDiv{
-      top: -34%
+      top: -34%;
+      ul{
+        li{
+          cursor: pointer;
+          &:hover{
+            color: #0166FF;
+          }
+        }
+      }
     }
   }
   li.fix_form{
@@ -1344,7 +1374,7 @@ body.show #popagree{
   }
   .companyNm{
     div{
-      height: 46px;
+    
       > label{
         position: relative;
         z-index: 1;

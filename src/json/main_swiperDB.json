@@ -24,5 +24,13 @@
       "title": "💻",
       "cls": "GangwonEdu_OTFBoldA"
     }
+  ],
+  "banner":[
+    {
+      "src": "./img/common/me1.jpg"
+    },
+    {
+      "src": "./img/common/me2.jpg"
+    }
   ]
 }

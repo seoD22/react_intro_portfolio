@@ -37,8 +37,8 @@ function Etc(props) {
     }
 
   return (
-    <div id="etc" className='container container_left'>
-      <h2>Etc</h2>
+    <div id="etc">
+      <h2 className='mt-3 mb-5'>Etc</h2>
       <Swiper
         modules={[Autoplay]}
         loop={true}
@@ -49,7 +49,7 @@ function Etc(props) {
         // onSlideChange={() => console.log('slide change')}
         // onSwiper={(swiper) => console.log(swiper)}
         autoplay={{
-          delay: 100000000,
+          delay: 3000,
           disableOnInteraction: false,
         }}
         breakpoints={{

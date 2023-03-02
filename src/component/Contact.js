@@ -6,6 +6,20 @@ import axios from 'axios'
 
 function Contact(props) {
   const [locationtoggle, toggleSet] = useState(false)
+  const areainput = document.getElementsByName('area')[0]
+
+  var areali = document.querySelectorAll('form .js-selectDiv li')
+  areali.forEach(function (el, index) {
+    //console.log(typeof a,b)
+    el.addEventListener('click', function () {
+      //console.log(this, typeof this)
+      var _thisText = this.innerHTML
+      //console.log(_thisText)
+      document.querySelector('form .js-selectDiv p').innerHTML = _thisText
+      areainput.value = _thisText
+      //console.log(areainput.value)
+    })
+  })
 
   // //팝업창 띄우기
   // document.querySelector('#agree + label a').addEventListener('click', function (e) {
@@ -34,7 +48,7 @@ function Contact(props) {
     e.preventDefault()
 
     // Handle validations
-    axios.post("http://seod.cafe24app.com/contact", { 
+    axios.post("http://seod.cafe24app.com/contact?type=select&mapid=contact", { 
       wr_comNm: "",
       wr_comL: "",
       wr_comPosit: "",
@@ -57,16 +71,16 @@ function Contact(props) {
   const [comTime, setcomTime] = useState()
 
   return (
-    <div id='contact_section' className='container container_left'>
-      <h2>Contact</h2>
-      <div className='form container p-0'>
+    <div id='contact_section' className='mx-auto col-8'>
+      <h2 className='mt-3 mb-5'>Contact</h2>
+      <div className='form p-0'>
         <form action="데이터를 저장할 서버페이지경로" method="post" name="contact" id="contact" onSubmit={handleSubmit}>
           <input type="hidden" name='area' />
           <ul className='row p-0 mb-0'>
             <li className="col-md-10 py-3 pr-0">
               <div className="line">
                 <p className="formindent m-0 translate_1">
-                  <label className="fw-5 bg-white px-2 m-0">회사명</label>
+                  <label className="fw-5 bg-white  m-0">회사명</label>
                   <input type="text" name='companyNm' className='d-block pl-2 w-100' placeholder="회사명을 입력해주세요."
                   onChange={e => setcompanyNm(e.target.value)}/>
                 </p>
@@ -74,8 +88,8 @@ function Contact(props) {
             </li>
             <li className="fix_form col-md-2 pr-0 py-3 pl-md-2">
               <div className="location line">
-                <p className="formindent m-0 translate_2">
-                  <label className="fw-5 bg-white px-2 m-0">회사 위치</label>
+                <p className="formindent m-0 translate_2 text-start">
+                  <label className="fw-5 bg-white  m-0">회사 위치</label>
                 </p>
                 <div onClick={()=>{
                   toggleSet(!locationtoggle)
@@ -96,34 +110,36 @@ function Contact(props) {
             <li className="companyNm col-md-6 py-3 pr-0">
               <div className="line">
                 <p className="formindent m-0 translate_2 check_box">
-                  <label className="bg-white px-2 m-0 fw-5">채용 직무</label>
-                  <div className="font-sm">
-                    <label className="m-0"><input type="checkbox" name="pront-end" value="pront-end" className="d-none" /><i className="bi bi-record-circle-fill"></i> 프론트엔드</label>
-                    <label className="m-0 ml-2"><input type="checkbox" name="publisher" value="publisher" className="d-none" /><i className="bi bi-record-circle-fill ps-3"></i> 퍼블리셔</label>
-                    <label className="m-0 ml-2"><input type="checkbox" name="planer" value="planer" className="d-none" /><i className="bi bi-record-circle-fill ps-3"></i> 기획자</label>
-                    <label className="m-0 ml-2"><input type="checkbox" name="etc" value="etc" className="d-none" /><i className="bi bi-record-circle-fill ps-3"></i> 기타 <input type="text" className="bg-light" placeholder="입력" /></label>
-                  </div>
+                  <label className="bg-white  m-0 fw-5">채용 직무</label>
+                 
                 </p>
+                <div className="font-sm">
+                    <label className="m-0 cursor_p"><input type="checkbox" name="pront-end" value="pront-end" className="d-none" /><i className="bi bi-record-circle-fill"></i> 프론트엔드</label>
+                    <label className="m-0 ml-2 cursor_p"><input type="checkbox" name="publisher" value="publisher" className="d-none" /><i className="bi bi-record-circle-fill ps-3"></i> 퍼블리셔</label>
+                    <label className="m-0 ml-2 cursor_p"><input type="checkbox" name="planer" value="planer" className="d-none" /><i className="bi bi-record-circle-fill ps-3"></i> 기획자</label>
+                    <label className="m-0 ml-2 cursor_p"><input type="checkbox" name="etc" value="etc" className="d-none" /><i className="bi bi-record-circle-fill ps-3"></i> 기타 <input type="text" className="bg-light" placeholder="입력" /></label>
+                  </div>
               </div>
             </li>
             <li className="companyNm col-md-6 py-3 pr-0">
               <div className="line">
                 <p className="formindent m-0 translate_2 check_box">
-                  <label className="bg-white px-2 m-0 fw-5 com_lang">주력 언어</label>
-                  <div className="font-sm">
-                    <label className="m-0"><input type="checkbox" name="react" value="react" className="d-none" /><i className="bi bi-record-circle-fill"></i> 리액트</label>
-                    <label className="m-0 ml-2"><input type="checkbox" name="node" value="node" className="d-none" /><i className="bi bi-record-circle-fill ps-3"></i> 노드</label>
-                    <label className="m-0 ml-2"><input type="checkbox" name="php" value="php" className="d-none" /><i className="bi bi-record-circle-fill ps-3"></i> php</label>
-                    <label className="m-0 ml-2"><input type="checkbox" name="js" value="js" className="d-none" /><i className="bi bi-record-circle-fill ps-3"></i> js</label>
-                    <label className="m-0 ml-2"><input type="checkbox" name="etc" value="etc" className="d-none" /><i className="bi bi-record-circle-fill ps-3"></i> 기타 <input type="text" className="bg-light" placeholder="입력" /></label>
-                  </div>
+                  <label className="bg-white m-0 fw-5 com_lang">주력 언어</label>
+                 
                 </p>
+                <div className="font-sm">
+                    <label className="m-0 cursor_p"><input type="checkbox" name="react" value="react" className="d-none" /><i className="bi bi-record-circle-fill"></i> 리액트</label>
+                    <label className="m-0 ml-2 cursor_p"><input type="checkbox" name="node" value="node" className="d-none" /><i className="bi bi-record-circle-fill ps-3"></i> 노드</label>
+                    <label className="m-0 ml-2 cursor_p"><input type="checkbox" name="php" value="php" className="d-none" /><i className="bi bi-record-circle-fill ps-3"></i> php</label>
+                    <label className="m-0 ml-2 cursor_p"><input type="checkbox" name="js" value="js" className="d-none" /><i className="bi bi-record-circle-fill ps-3"></i> js</label>
+                    <label className="m-0 ml-2 cursor_p"><input type="checkbox" name="etc" value="etc" className="d-none" /><i className="bi bi-record-circle-fill ps-3"></i> 기타 <input type="text" className="bg-light" placeholder="입력" /></label>
+                  </div>
               </div>
             </li>
             <li className="col-md-2 py-3 pr-0 mnNm">
               <div className="line">
                 <p className="formindent m-0 translate_1">
-                  <label className="managerNm fw-5 bg-white px-2 m-0">담당자명</label>
+                  <label className="managerNm fw-5 bg-white m-0">담당자명</label>
                   <input type="text" name="companyNm" className="d-block pl-2 w-100" onChange={e => setNm(e.target.value)}/>
                 </p>
               </div>
@@ -131,7 +147,7 @@ function Contact(props) {
             <li className="col-md-10 py-3 pr-0">
               <div className="line">
                 <p className="formindent m-0 translate_1">
-                  <label className="fw-5 bg-white px-2 m-0">연락처</label>
+                  <label className="fw-5 bg-white m-0">연락처</label>
                   <input type="text" name="companyNm" className="d-block pl-2 w-100" placeholder="담당자님께 연락할 수 있는 이메일 혹은 카톡아이디를 남겨주세요." onChange={e => setemail(e.target.value)}/>
                 </p>
               </div>
@@ -139,15 +155,15 @@ function Contact(props) {
             <li className="col-6 col-md-2 py-3 pr-0">
               <div className="line meeting">
                 <p className="formindent m-0 translate_1">
-                  <label className="fw-5 bg-white px-2 m-0">면접 날짜</label>
-                  <input type="date" name="comDate" className="d-block pl-1 w-100" onChange={e => setcomDate(e.target.value)} />
+                  <label className="fw-5 bg-white  m-0">면접 날짜</label>
+                  <input type="date" name="comDate" className="d-block pl-1 w-100 " onChange={e => setcomDate(e.target.value)} />
                 </p>
               </div>
             </li>
             <li className="col-6 col-md-2 py-3 pr-0">
               <div className="line meeting">
                 <p className="formindent m-0 translate_1">
-                  <label className="fw-5 bg-white px-2 m-0">면접 시간</label>
+                  <label className="fw-5 bg-white  m-0">면접 시간</label>
                   <input type="time" name="comTime" className="d-block pl-1 w-100" onChange={e => setcomTime(e.target.value)}  />
                 </p>
               </div>
@@ -159,7 +175,7 @@ function Contact(props) {
               <div className="line">
                 <p className="formindent m-0">
                   <div className="formindent">
-                    <label className="fw-5 bg-white px-2 m-0">남기고 싶은 말</label>
+                    <label className="fw-5 bg-white  m-0">남기고 싶은 말</label>
                   </div>
                   <div>
                     <textarea name="etc_text" className='etc_text d-block w-100 pl-4' placeholder='자유롭게 작성 부탁드립니다.'></textarea>

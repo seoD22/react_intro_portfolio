@@ -3,6 +3,7 @@
     {
       "d1": {
         "naviText": "Portfolio",
+        "naviText_kr": "포트폴리오",
         "naviType": "a",
         "navihref": "#portfolio",
         "naviCls": ["font141618", "li_1"]
@@ -11,6 +12,7 @@
     {
       "d1": {
         "naviText": "About Me",
+        "naviText_kr": "내소개",
         "naviType": "a",
         "navihref": "#about",
         "naviCls": ["font141618", "li_2"]
@@ -19,6 +21,7 @@
     {
       "d1": {
         "naviText": "Preinterview",
+        "naviText_kr": "사전인터뷰",
         "naviType": "a",
         "navihref": "#preinterview",
         "naviCls": ["font141618", "li_3"]
@@ -27,6 +30,7 @@
     {
       "d1": {
         "naviText": "Contact",
+        "naviText_kr": "연락하기",
         "naviType": "a",
         "navihref": "#contact",
         "naviCls": ["font141618", "li_4"]
@@ -35,6 +39,7 @@
     {
       "d1": {
         "naviText": "ETC",
+        "naviText_kr": "기타",
         "naviType": "a",
         "navihref": "#etc",
         "naviCls": ["font141618", "li_5"]
@@ -47,7 +52,7 @@
         "snsImg":"./img/common/icon/sns_Git.png",
         "snsLink": "www.naver.com",
         "snsTarget":"_blank",
-        "snsCls":"sns_1"
+        "snsCls":["sns_1 col-3"]
       }
     },
     {
@@ -55,7 +60,7 @@
         "snsImg":"./img/common/icon/sns_Kakao.png",
         "snsLink": "www.naver.com",
         "snsTarget":"_blank",
-        "snsCls":"sns_2"
+        "snsCls":["sns_2 col-3"]
       }
     }
   ]

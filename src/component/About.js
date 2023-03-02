@@ -11,9 +11,9 @@ function About(props) {
   }, [])
 
   return (
-    <div id='about' className='container_left'>
-      <h2>About me</h2>
-      <div>
+    <div id='about' className='mt-3 mb-5 contentBox col-lg-9 mx-lg-auto'>
+      <h2 className='mt-5 mb-5'>About me</h2>
+      <div className=''>
       <img className='about_img' src="/img/ysh.png" alt="" />
       <div className='about_text'>
         <p>
