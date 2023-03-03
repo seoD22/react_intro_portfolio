@@ -71,22 +71,22 @@ function Contact(props) {
   const [comTime, setcomTime] = useState()
 
   return (
-    <div id='contact_section' className='mx-auto col-8'>
-      <h2 className='mt-3 mb-5'>Contact</h2>
+    <div id='contact_section' className='my-5 mx-auto col-10 col-md-8'>
+      <h2 className='mb-5'>Contact</h2>
       <div className='form p-0'>
         <form action="데이터를 저장할 서버페이지경로" method="post" name="contact" id="contact" onSubmit={handleSubmit}>
           <input type="hidden" name='area' />
           <ul className='row p-0 mb-0'>
-            <li className="col-md-10 py-3 pr-0">
+            <li className="col-md-9 py-3 pr-0">
               <div className="line">
-                <p className="formindent m-0 translate_1">
+                <p className="formindent m-0 translate_1 text-start">
                   <label className="fw-5 bg-white  m-0">회사명</label>
                   <input type="text" name='companyNm' className='d-block pl-2 w-100' placeholder="회사명을 입력해주세요."
                   onChange={e => setcompanyNm(e.target.value)}/>
                 </p>
               </div>
             </li>
-            <li className="fix_form col-md-2 pr-0 py-3 pl-md-2">
+            <li className="fix_form col-md-3 pr-0 py-3 pl-md-2">
               <div className="location line">
                 <p className="formindent m-0 translate_2 text-start">
                   <label className="fw-5 bg-white  m-0">회사 위치</label>
@@ -109,7 +109,7 @@ function Contact(props) {
             </li>
             <li className="companyNm col-md-6 py-3 pr-0">
               <div className="line">
-                <p className="formindent m-0 translate_2 check_box">
+                <p className="formindent m-0 translate_2 check_box text-start">
                   <label className="bg-white  m-0 fw-5">채용 직무</label>
                  
                 </p>
@@ -123,7 +123,7 @@ function Contact(props) {
             </li>
             <li className="companyNm col-md-6 py-3 pr-0">
               <div className="line">
-                <p className="formindent m-0 translate_2 check_box">
+                <p className="formindent m-0 translate_2 check_box text-start">
                   <label className="bg-white m-0 fw-5 com_lang">주력 언어</label>
                  
                 </p>
@@ -136,45 +136,45 @@ function Contact(props) {
                   </div>
               </div>
             </li>
-            <li className="col-md-2 py-3 pr-0 mnNm">
+            <li className="col-md-3 py-3 pr-0 mnNm">
               <div className="line">
-                <p className="formindent m-0 translate_1">
+                <p className="formindent m-0 translate_1 text-start">
                   <label className="managerNm fw-5 bg-white m-0">담당자명</label>
                   <input type="text" name="companyNm" className="d-block pl-2 w-100" onChange={e => setNm(e.target.value)}/>
                 </p>
               </div>
             </li>
-            <li className="col-md-10 py-3 pr-0">
+            <li className="col-md-9 py-3 pr-0">
               <div className="line">
-                <p className="formindent m-0 translate_1">
+                <p className="formindent m-0 translate_1 text-start">
                   <label className="fw-5 bg-white m-0">연락처</label>
                   <input type="text" name="companyNm" className="d-block pl-2 w-100" placeholder="담당자님께 연락할 수 있는 이메일 혹은 카톡아이디를 남겨주세요." onChange={e => setemail(e.target.value)}/>
                 </p>
               </div>
             </li>
-            <li className="col-6 col-md-2 py-3 pr-0">
+            <li className="col-6 col-md-3 py-3 pr-0">
               <div className="line meeting">
-                <p className="formindent m-0 translate_1">
+                <p className="formindent m-0 translate_1 text-start">
                   <label className="fw-5 bg-white  m-0">면접 날짜</label>
                   <input type="date" name="comDate" className="d-block pl-1 w-100 " onChange={e => setcomDate(e.target.value)} />
                 </p>
               </div>
             </li>
-            <li className="col-6 col-md-2 py-3 pr-0">
+            <li className="col-6 col-md-3 py-3 pr-0">
               <div className="line meeting">
-                <p className="formindent m-0 translate_1">
+                <p className="formindent m-0 translate_1 text-start">
                   <label className="fw-5 bg-white  m-0">면접 시간</label>
                   <input type="time" name="comTime" className="d-block pl-1 w-100" onChange={e => setcomTime(e.target.value)}  />
                 </p>
               </div>
             </li>
-            <li className="comment d-none d-md-block col-8">
+            <li className="comment d-none d-md-block col">
               <span className="ml-3">* 남기고 싶은 말란에 추가로 남기셔도 괜찮습니다.</span>
             </li>
             <li id="message" className="col-md-12 py-3 pr-0">
               <div className="line">
                 <p className="formindent m-0">
-                  <div className="formindent">
+                  <div className="formindent text-start">
                     <label className="fw-5 bg-white  m-0">남기고 싶은 말</label>
                   </div>
                   <div>

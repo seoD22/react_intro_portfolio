@@ -30,8 +30,8 @@ function Pre_mobile(props) {
   }, []);
   
   return (
-    <div id='preinterview'>
-      <h2>Preinterview</h2>
+    <div id='preinterview' className='my-5'>
+      <h2 className='mb-5'>Preinterview</h2>
       {   loading && <div>로딩중..</div> }
       { error &&  <div>에러가 발생했습니다</div>}
       {

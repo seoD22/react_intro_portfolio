@@ -137,7 +137,6 @@ p{
   display: flex;
   flex-direction: column;
   justify-content: center;
-
   .banner_img{
     opacity: 0;
     transition: .5s;
@@ -147,13 +146,9 @@ p{
     &.show{
       opacity: 1 !important;
     }
-   
-    
   }
   .main_text {
     position: relative;
-
-   
     span{
       z-index: 1;
     }
@@ -378,11 +373,10 @@ p{
 }
 
 #portfolio {
-  
   .swiper-slide {
     height: 600px;
     display: flex;
-    justify-content: center;
+    // justify-content: center;
     align-items: center;
   }
 }
@@ -394,13 +388,9 @@ p{
     left: 26%;
     width: 230px;
   }
-
   .por_circle {
-    width: 400px;
-    height: 400px;
     background-color: #D9D9D9 !important;
     border-radius: 50%;
-
     .po_main_img {
       overflow: hidden;
       object-fit: cover;
@@ -449,30 +439,14 @@ p{
 
 #about{
   margin-top: 50px;
-  > div{
-    img{
-      width: 400px;
-    }
-  } 
-  .about_text{
-    p{
-      margin: 3px;
-      margin-top: 10px;
-    }
-  }
   .skill_wrapper{
-    // position: absolute;
-    // width: 80%;
-    // top: 50%;
-    // left: 50%;
-    // transform: translateX(-50%) translateY(-50%);
     padding: 10px;
     img{
       width: 45px;
     }
   }
   .skillbar{
-    padding: 15px;
+    padding-bottom: 15px;
     position: relative;
     display: flex;
     width: 100%;
@@ -532,28 +506,22 @@ p{
         }
       }
     }
-    
     .pre_button:hover{
       cursor: pointer;
       background-color: #0167ff43;
     }
-
     .pre_button.click{
       background-color: #0166FF;
       color: white;
       + .pre_answer{
-        height: 300px;
+        height: auto;
         padding: 20px;
-        &:nth-child(2){
-          height: 405px;
-        }
       }
     }
   }
 }
 
 #contact_section{
-
   .location{
     .bg_arrow{
       cursor: pointer;
@@ -577,29 +545,11 @@ p{
       position: relative;
       padding-left: 5px;
       padding-right: 5px;
-      transform: translateX(-301%);
-    }
-    .managerNm{
-      transform: translateX(-231%);
-    }
-  }
-  .translate_2{
-    > label{
-      transform: translateX(-219%);
-    }
-  }
-  .meeting{
-    .formindent{
-      > label{
-        transform: translateX(-63%);
-      }
     }
   }
   .check_box{
-   
     .font-sm{
       text-align: left;
-     
     }
   }
 
@@ -623,12 +573,7 @@ p{
     padding-left: 5px;
     top: -8px;
 
-   
-  }
-  .js-selectDiv{
-    span{
-      padding-left: 4px;
-    }
+  
   }
   .etc_text{
     height: 206px;
@@ -636,7 +581,7 @@ p{
 }
 
 #etc{
-  height: 60vh;
+  height: 65vh;
   margin-top: 100px;
   .swiper{
     margin-top: 50px;
@@ -671,9 +616,6 @@ p{
 
 
 @media(min-width: 992px) {
-  h2{
-    margin-top: 100px;
-  }
   .container {
     max-width: 1920px;
   }
@@ -707,12 +649,6 @@ p{
     }
   }
 
-  #main_banner {
-    .main_text{
-     
-    }
-  }
-
   .burger {
     display: none;
   } 
@@ -720,9 +656,6 @@ p{
   
   #portfoli_swiper{
     .por_circle {
-      width: 500px;
-      height: 500px;
-
       .circle {
         opacity: 0;
       }
@@ -824,17 +757,13 @@ p{
         transform: scale(100%);
 
         .por_circle {
-          position: absolute;
-
           >img {
             top: -53px;
           }
-
           .po_des_dep1 {
             display: block;
             position: relative;
             width: 400px;
-            left: -384px;
 
             span {
               display: flex;
@@ -910,18 +839,12 @@ p{
       display: flex;
       img{
         object-fit: contain;
-        width: 33.333%;
       }
       .about_img{
         transform: translateY(-44px);
       }
       .about_text{
         text-align: start;
-        padding: 15px 0;
-        padding-left: 3rem;
-        // display: flex;
-        // flex-direction: column;
-        // justify-content: space-between;
         p:nth-child(1){
           margin-top: 0;
         }
@@ -935,32 +858,31 @@ p{
 
   #preinterview{
     position: relative;
-   
     h2{
-    
- 
- 
+      font-size: 30px;
+      text-align: left;
+      line-height: 1;
+    }
+    .muk{
+      height: 40rem;
     }
     .pre_pc{
-      display: inline;
-      float: left;
-      width: 55vw;
       .pre_btns_pc{
         display: flex;
         flex-direction: column;
         background-color: white;
-        height: 553px;
         justify-content: space-between;
       }
     }
     .pre_button_pc{
       background-color: white;
-      width: 40vw;
       border-radius: 20px;
       box-shadow: 2px 2px 3px rgba($color: grey, $alpha: .3);
       transition: .5s;
       position: relative;
       z-index: 10;
+      white-space: nowrap;
+      width: 40%;
       &:hover{
         cursor: pointer;
         background-color: #0167ff43;
@@ -972,24 +894,21 @@ p{
       }
     }
     .pre_answer_pc{
-      float: right;
-      transform: translate(0, 108px);
-      width: 40vw;
       background-color: white;
       border: #FCA311 solid 2px;
       border-radius: 20px;
-      height: 650px;
       position: absolute;
       z-index: 0;
-      right: 40px;
       top: 0;
+      right: 0;
+      height: 100%;
       padding: 70px;
       p{
         text-align: left;
       }
     }
     .pre_button_pc.click{
-      width: 47vw;
+      width: 47% !important;
       background-color: #0166FF;
       & + .pre_answer_pc{
         z-index: 5;
@@ -1002,12 +921,10 @@ p{
       display: flex;
       flex-direction: column;
       align-items: baseline;
-    
     }
     .formindent{
       > label{
         transform: none;
-       
       }
       .managerNm{
         transform: none;
@@ -1016,16 +933,12 @@ p{
     .translate_2{
       > label{
         transform: none;
-       
       }
     }
     .check_box{
       display: flex;
       flex-direction: column;
       align-items: start;
-      > label{
-      
-      }
     }
     .meeting .formindent > label{
       transform: none;
@@ -1193,6 +1106,9 @@ p{
 }
 
 @media (max-width: 992px) {
+  h2{
+    margin-top: 6rem !important;
+  }
   .po_main_img {
     +.po_mobile button,
     +.po_mobile .po_mobile_title,
@@ -1351,7 +1267,6 @@ body.show #popagree{
     p.bg_arrow{
       background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' class='bi bi-caret-down' viewBox='0 0 16 16'%3E%3Cpath d='M3.204 5h9.592L8 10.481 3.204 5zm-.753.659 4.796 5.48a1 1 0 0 0 1.506 0l4.796-5.48c.566-.647.106-1.659-.753-1.659H3.204a1 1 0 0 0-.753 1.659z'/%3E%3C/svg%3E") right;
       background-repeat: no-repeat;
-      padding-left: 10px;
     }
     .js-selectDiv.on p{
       background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' class='bi bi-caret-up' viewBox='0 0 16 16'%3E%3Cpath d='M3.204 11h9.592L8 5.519 3.204 11zm-.753-.659 4.796-5.48a1 1 0 0 1 1.506 0l4.796 5.48c.566.647.106 1.659-.753 1.659H3.204a1 1 0 0 1-.753-1.659z'/%3E%3C/svg%3E") right;
@@ -1360,7 +1275,7 @@ body.show #popagree{
     div.js-selectDiv{
       z-index: 2;
       margin-right: 14px;
-      margin-left: 14px;
+      margin-left: 5px;
       ul{
         width: 100%;
         padding: 8px 10px;

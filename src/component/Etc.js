@@ -37,13 +37,13 @@ function Etc(props) {
     }
 
   return (
-    <div id="etc">
-      <h2 className='mt-3 mb-5'>Etc</h2>
+    <div id="etc" className='my-5'>
+      <h2 className='mb-4'>Etc</h2>
       <Swiper
         modules={[Autoplay]}
         loop={true}
         loopAdditionalSlides={1}
-        spaceBetween={10}
+        spaceBetween={30}
         slidesPerView={1.3}
         centeredSlides={true}
         // onSlideChange={() => console.log('slide change')}
@@ -53,11 +53,20 @@ function Etc(props) {
           disableOnInteraction: false,
         }}
         breakpoints={{
-          992: {
+          765:{
+            slidesPerView: 2.3,
             centeredSlides: false,
-            slidesPerView: 3.5,
-            spaceBetween: 0,
-            speed: 700
+            spaceBetween: 30,
+          },
+          1150:{
+            slidesPerView: 3.3,
+            centeredSlides: false,
+            spaceBetween: 30,
+          },
+          1500: {
+            slidesPerView: 4.3,
+            centeredSlides: false,
+            spaceBetween: 30,
           }
         }}
       >

@@ -35,24 +35,24 @@ const Pre_pc = (props) => {
     
   
     return(
-      <div id='preinterview' className='mt-3 mb-5 contentBox col-lg-9 mx-lg-auto'>
+      <div id='preinterview' className='my-5 contentBox col-lg-9 mx-lg-auto py-5'>
         {   loading && <div>로딩중..</div> }
         { error &&  <div>에러가 발생했습니다</div>}
         {
-          loading === false && <div>
-            <h2 className='mt-5 mb-5 text-center'>Preinterview</h2>
-            <div className='pre_pc visually-hidden'>
+          loading === false && <div className='muk position-relative'>
+            <h2 className='mb-3 pb-4 align-top'>Preinterview</h2>
+            <div className='pre_pc'>
               <div className='pre_btns_pc'>
                 {
                   axiosVar && axiosVar.map((it, idx)=>{
                     return(
-                      <div key={'prebtns'+idx} >
+                      <div className='mb-4' key={'prebtns'+idx} >
                         <div className='pre_button_pc' onClick={(e)=>{
                           axiosVar.forEach((v, i)=>{
                             if( i === idx){
                               prebtn_pc.item(i).classList = 'pre_button_pc click'
                             }else{
-                              prebtn_pc.item(i).classList = 'pre_button_pc'
+                              prebtn_pc.item(i).classList = 'pre_button_pc '
                             }
                           })
                             // updateVar(it.func)
@@ -62,7 +62,7 @@ const Pre_pc = (props) => {
                             {it.subject}
                           </button>
                         </div>
-                        <div key={'answer'+idx} className='pre_answer_pc'>
+                        <div key={'answer'+idx} className='pre_answer_pc col-7'>
                           <p>
                             {it.des_1}<br></br><br></br>{it.des_2}<br></br><br></br>{it.des_3}
                           </p>

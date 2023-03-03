@@ -48,7 +48,7 @@
   font-family: 'GangwonEdu_OTFBoldA';
 }
 
-h2{font-family: 'Nunito', 'Noto Sans KR', sans-serif; font-weight: 300; font-size: 40px; color: #0166FF; text-transform: uppercase;}
+h2{font-family: 'Nunito', 'Noto Sans KR', sans-serif; font-weight: 300; font-size: 40px; color: #0166FF; text-transform: uppercase; margin-top: 8rem !important;}
 
 #hd{
   font-family: 'Nunito', 'Noto Sans KR', sans-serif;
@@ -71,6 +71,9 @@ h2{font-family: 'Nunito', 'Noto Sans KR', sans-serif; font-weight: 300; font-siz
   .swiper-slide{
     font-size: 70px;
     font-weight: 600;
+  }
+  .main_text{
+    color: #fca311;
   }
 }
 
@@ -139,15 +142,16 @@ h2{font-family: 'Nunito', 'Noto Sans KR', sans-serif; font-weight: 300; font-siz
       font-family: 'Noto Sans KR', sans-serif;
       font-size: 16px;
       font-weight: 200;
+      line-height: 1.5;
       &:nth-child(1){
         font-size: 20px;
         font-weight: 400;
       }
-      &:nth-child(7),
-      &:nth-child(8),
-      &:nth-child(9){
-        font-weight: 400;
-      }
+    }
+    strong{
+      color: #fca311;
+      font-family: 400;
+      line-height: 2;
     }
   }
   .skillbar{
@@ -180,7 +184,6 @@ h2{font-family: 'Nunito', 'Noto Sans KR', sans-serif; font-weight: 300; font-siz
   h2{
     font-size: 50px;
   }
-
   #main_banner{
     font-family: 'Noto Sans KR', sans-serif;
     font-weight: 100;
@@ -191,6 +194,9 @@ h2{font-family: 'Nunito', 'Noto Sans KR', sans-serif; font-weight: 300; font-siz
         font-size: 90px;
         font-weight: 900;
       }
+    }
+    .main_text{
+      color: black;
     }
   }
 
@@ -209,15 +215,9 @@ h2{font-family: 'Nunito', 'Noto Sans KR', sans-serif; font-weight: 300; font-siz
     .about_text{
       p{
         font-size: 16px;
-        font-weight: 400;
+        font-weight: 300;
         &:nth-child(1){
-          font-weight: 600;
-        }
-        &:nth-child(7),
-        &:nth-child(8),
-        &:nth-child(9){
-          font-size: 17px;
-          font-weight: 600;
+          font-weight: 500;
         }
       }
     }
@@ -226,7 +226,7 @@ h2{font-family: 'Nunito', 'Noto Sans KR', sans-serif; font-weight: 300; font-siz
   #preinterview{
     .pre_pc{
       .pre_button_pc{
-        line-height: 120px;
+        line-height: 122px;
         button{
           background-color: transparent;
           font-size: 18px;
