@@ -77,7 +77,7 @@ function Portfolio_Swiper() {
               const imgsrc = item.tool_img
               const iconsrc = item.sns_icon
 
-              return <SwiperSlide><div className={swiperclass}><div className='po_mobile d-lg-none'><p className='po_mobile_title'>{item.title[0]}</p><div className='d-flex justify-content-center align-items-center'><button onClick={() => { po_btnupdate(!po_btnToggle) }}><p>More</p><div className={po_btnToggle ? "show po_mobile_sns" : "po_mobile_sns"}>
+              return <SwiperSlide><div className={swiperclass}><div className='po_mobile d-none'><p className='po_mobile_title'>{item.title[0]}</p><div className='d-flex justify-content-center align-items-center'><button onClick={() => { po_btnupdate(!po_btnToggle) }}><p>More</p><div className={po_btnToggle ? "show po_mobile_sns" : "po_mobile_sns"}>
                 {
                   iconsrc.map((it, idx) => {
                     return <img src={it} alt="" className='img-fluid' />

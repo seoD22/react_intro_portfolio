@@ -372,10 +372,8 @@ p{
 }
 
 #portfoli_swiper {
-  .inner{
-
-  }
   .po_img{
+    margin: auto;
     background-position: top;
     background-repeat: no-repeat;
     background-size: contain;
@@ -414,13 +412,13 @@ p{
   .swiper-button-next {
     background-color: black;
     border-radius: 50%;
-    right: 34%;
+    right: 18%;
     width: 40px;
     height: 40px;
   }
 
   .swiper-button-prev{
-    left: 34%;
+    left: 18%;
     right: unset  !important;
   }
 
@@ -450,8 +448,7 @@ p{
   }
   .swiper-slide-active{
     .por_circle{
-      transform: scale(1) translateX(10%);
-      
+      transform: translateX(0);
     }
   }
 }
@@ -667,13 +664,14 @@ p{
       }
     }
   }
-
   .burger {
     display: none;
   } 
-
   
   #portfoli_swiper{
+    .po_img{
+      margin: unset;
+    }
     .por_circle {
       .circle {
         opacity: 0;
@@ -756,6 +754,7 @@ p{
       &.swiper-slide-active {
         // transform: scale(100%);
         .por_circle {
+          transform: scale(1) translateX(10%);
           .po_des_dep1 {
             display: block;
             position: relative;
@@ -801,6 +800,13 @@ p{
           position: relative;
         }
       }
+    }
+    .swiper-button-prev,
+    .swiper-button-next {
+      right: 34%;
+    }
+    .swiper-button-prev{
+      left: 34%;
     }
   }
 
