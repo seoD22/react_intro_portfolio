@@ -42,9 +42,9 @@ function Portfolio_Swiper() {
   }
 
   return (
-    <div id='portfoli_swiper' className='my-5 contentBox col-lg-9 mx-lg-auto'>
-      <h2 className='mb-5'>Portfolio</h2>
-      <div>
+    <div id='portfoli_swiper' className='my-5 col-lg-9 contentBox mx-lg-auto'>
+      <div className='inner'>
+        <h2 className='mb-5'>Portfolio</h2>
         <Swiper
           modules={[Autoplay, Navigation, Pagination]}
           loop={true}
@@ -55,7 +55,7 @@ function Portfolio_Swiper() {
           }
           spaceBetween={0}
           slidesPerView={1}
-          centeredSlides={true}
+          // centeredSlides={true}
           speed={500}
           // onSlideChange={() => console.log('slide change')}
           // onSwiper={(swiper) => console.log(swiper)}
@@ -64,13 +64,12 @@ function Portfolio_Swiper() {
             disableOnInteraction: false,
           }}
           breakpoints={{
-            992: {
-              slidesPerView: 3,
+            991: {
+              slidesPerView: 1.5,
               spaceBetween: 0,
-              speed: 700
             }
           }}
-          className="mySwiper"
+          className="mySwiper py-5"
         >
           {
             swiperDBfile.map((item, index) => {
@@ -78,19 +77,19 @@ function Portfolio_Swiper() {
               const imgsrc = item.tool_img
               const iconsrc = item.sns_icon
 
-              return <SwiperSlide><div className={swiperclass}><img src={item.src} alt="" className='po_main_img img-fluid' /><div className='po_mobile d-lg-none'><p className='po_mobile_title'>{item.title[0]}</p><div className='d-flex justify-content-center align-items-center'><button onClick={() => { po_btnupdate(!po_btnToggle) }}><p>More</p><div className={po_btnToggle ? "show po_mobile_sns" : "po_mobile_sns"}>
+              return <SwiperSlide><div className={swiperclass}><div className='po_mobile d-lg-none'><p className='po_mobile_title'>{item.title[0]}</p><div className='d-flex justify-content-center align-items-center'><button onClick={() => { po_btnupdate(!po_btnToggle) }}><p>More</p><div className={po_btnToggle ? "show po_mobile_sns" : "po_mobile_sns"}>
                 {
                   iconsrc.map((it, idx) => {
                     return <img src={it} alt="" className='img-fluid' />
                   })
                 }
-              </div></button><div className='circle'></div></div></div><div className='po_des_dep1 col-2'><span><strong>{item.title[0]}</strong>{item.title[1]}</span><p className='po_tag'>{item.tag}</p><span className='po_des_dep2 mt-2'><p>{item.title[2]}</p></span><span><p className='po_mak mt-2'>{item.mak}</p></span><div className='tools'></div><div className='stack_1'><p className='mt-2'>STACK</p><Stackbar num={index}></Stackbar></div><div className='po_sns mt-3'>
+              </div></button><div className='circle'></div></div></div><div className='po_des_dep1 text-start'><span><strong>{item.title[0]}</strong>{item.title[1]}</span><p className='po_tag'>{item.tag}</p><span className='po_des_dep2 mt-2'><p>{item.title[2]}</p></span><span><p className='po_mak mt-2'>{item.mak}</p></span><div className='tools'></div><div className='stack_1'><p className='mt-2'>STACK</p><Stackbar num={index}></Stackbar></div><div className='po_sns mt-3'>
                     {
                       iconsrc.map((it, idx) => {
                         return <img src={it} alt="" className='img-fluid'/>
                       })
                     }
-                  </div></div></div></SwiperSlide>
+                  </div></div><div className='po_img'><img src={item.src}></img></div></div></SwiperSlide>
             })
           }
         </Swiper>
