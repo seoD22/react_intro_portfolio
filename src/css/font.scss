@@ -89,19 +89,25 @@ h2{font-family: 'Nunito', 'Noto Sans KR', sans-serif; font-weight: 300; font-siz
 
 #portfoli_swiper{
   span{
-    font-size: 15px;
+    font-size: 14px;
     font-weight: 300;
     color: #8A8989;
     strong{
       font-family: 'Noto Sans KR', sans-serif;
-      font-size: 35px;
+      font-size: 28px;
       font-weight: 700;
       color: #0166FF;
     }
   }
   .po_tag{
-    font-weight: 600;
+    font-weight: 500;
     color: #8A8989;
+  }
+  .po_dex_dep2{
+    p{
+      font-size: 15px;
+      font-weight: 300;
+    }
   }
   .po_des_dep2,
   .po_mak{
@@ -119,9 +125,12 @@ h2{font-family: 'Nunito', 'Noto Sans KR', sans-serif; font-weight: 300; font-siz
   .stack_1{
     p{
       font-family: 'Nunito', sans-serif;
-      font-size: 20px;
+      font-size: 12px;
       font-weight: 700;
       color: #8A8989;
+    }
+    >p{
+      font-size: 15px;
     }
   }
   .po_mobile_title{
@@ -179,8 +188,7 @@ h2{font-family: 'Nunito', 'Noto Sans KR', sans-serif; font-weight: 300; font-siz
   }
 }
 
-
-@media(min-width: 992px){
+@media(min-width: 991px){
   h2{
     font-size: 50px;
   }
@@ -208,6 +216,44 @@ h2{font-family: 'Nunito', 'Noto Sans KR', sans-serif; font-weight: 300; font-siz
       p{
         font-size: 10px;
       }
+    }
+  }
+
+  #portfoli_swiper{
+    span{
+      font-size: 15px;
+      font-weight: 300;
+      strong{
+        font-size: 35px;
+        font-weight: 700;
+      }
+    }
+    .po_tag{
+      font-weight: 600;
+    }
+    .po_des_dep2,
+    .po_mak{
+      font-size: 17px; 
+      font-weight: 400;
+    }
+    .tools{
+      p{
+        font-size: 20px;
+        font-weight: 700;
+      }
+    }
+    .stack_1{
+      p{
+        font-size: 14px;
+        font-weight: 700;
+      }
+      >p{
+        font-size: 20px;
+      }
+    }
+    .po_mobile_title{
+      font-size: 30px;
+      font-weight: 400;
     }
   }
 

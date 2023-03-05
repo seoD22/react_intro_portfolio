@@ -83,12 +83,13 @@ function Portfolio_Swiper() {
                     return <img src={it} alt="" className='img-fluid' />
                   })
                 }
-              </div></button><div className='circle'></div></div></div><div className='po_des_dep1 text-start'><span><strong>{item.title[0]}</strong>{item.title[1]}</span><p className='po_tag'>{item.tag}</p><span className='po_des_dep2 mt-2'><p>{item.title[2]}</p></span><span><p className='po_mak mt-2'>{item.mak}</p></span><div className='tools'></div><div className='stack_1'><p className='mt-2'>STACK</p><Stackbar num={index}></Stackbar></div><div className='po_sns mt-3'>
+              </div></button><div className='circle'></div></div></div><div className='po_des_dep1 text-start'><span><strong>{item.title[0]}</strong>{item.title[1]}</span><p className='po_tag'>{item.tag}</p><span className='po_des_dep2 mt-2'><p>{item.title[2]}</p></span><span><p className='po_mak mt-2'>{item.mak}</p></span><div className='tools'></div><div className='stack_1'><p className='mt-2'>STACK</p><Stackbar num={index}></Stackbar></div><div className='po_sns mt-3'><a href={item.href} target="_blank">
                     {
-                      iconsrc.map((it, idx) => {
+                      item.sns_icon.map((it, idx) => {
                         return <img src={it} alt="" className='img-fluid'/>
                       })
                     }
+                    </a>
                   </div></div><div className='po_img'><img src={item.src}></img></div></div></SwiperSlide>
             })
           }
